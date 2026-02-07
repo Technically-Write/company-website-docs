@@ -123,11 +123,11 @@ const config: Config = {
           label: 'Contact',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
+        //{
+          //href: 'https://github.com/facebook/docusaurus',
+          //label: 'GitHubs',
+          //position: 'right',
+        //},
       ],
     },
     footer: {

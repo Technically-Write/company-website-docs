@@ -146,3 +146,8 @@ a {
   content: none !important;
   display: none !important;
 }
+
+.navbar__logo {
+  width: 50px;
+  height: auto;
+}
