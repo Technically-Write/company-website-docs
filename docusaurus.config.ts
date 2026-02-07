@@ -5,9 +5,20 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'WELCOME TO TECHNICALLY WRITE LTD.',
+  tagline: 'Clear technical documentation that simplifies complex products and helps your business to scale.',
+  customFields: {
+    heroDescription:
+      'Technical writing and documentation built for real users, real products, and growing organisations.',
+  },
+
+  stylesheets: [
+  {
+    href:
+      'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Lato:wght@400;700&display=swap',
+    rel: 'stylesheet',
+  },
+],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -75,17 +86,41 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'Home',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/tw-icon.jpg',
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          type: 'doc',
+          docId: 'services',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Services',
+        },
+        {
+          type: 'doc',
+          docId: 'about',
+          position: 'left',
+          label: 'About',
+        },
+        {
+          type: 'doc',
+          docId: 'portfolio',
+          position: 'left',
+          label: 'Portfolio',
+        },
+        {
+          type: 'doc',
+          docId: 'prices',
+          position: 'left',
+          label: 'Prices',
+        },
+        {
+          type: 'doc',
+          docId: 'contact',
+          position: 'left',
+          label: 'Contact',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {

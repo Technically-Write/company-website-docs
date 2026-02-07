@@ -4,10 +4,10 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
   position: relative;
   overflow: hidden;
+  display: block; /* IMPORTANT: not flex */
+  isolation: isolate;
 }
 
 @media screen and (max-width: 996px) {
@@ -20,4 +20,81 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.heroBanner:global(.hero) {
+  min-height: 0;
+  padding: 0;
+}
+
+/* Kill any Docusaurus hero pseudo-elements that can sit above content */
+.heroBanner:global(.hero.hero--primary)::before,
+.heroBanner:global(.hero.hero--primary)::after,
+:global(.hero.hero--primary).heroBanner::before,
+:global(.hero.hero--primary).heroBanner::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Also remove any background the hero might apply */
+.heroBanner:global(.hero.hero--primary),
+:global(.hero.hero--primary).heroBanner {
+  background: transparent !important;
+}
+
+.heroBanner:global(.hero.hero--primary) {
+  min-height: 0 !important;
+  height: clamp(380px, 60vh, 520px);
+  padding: 0;
+}
+
+.heroBanner:global(.hero--primary) {
+  background: transparent !important;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+  user-select: text;
+}
+
+.heroContent * {
+  pointer-events: auto;
+  user-select: text;
+  text-align: center;
+}
+
+.heroVideo {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.heroOverlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.heroBanner :global(.container) {
+  position: relative;
+  z-index: 10;
+}
+
+/* Center the hero content vertically + keep it centered horizontally */
+.heroBanner :global(.container) {
+  position: relative;
+  z-index: 10;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
 }
