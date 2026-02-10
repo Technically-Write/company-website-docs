@@ -16,6 +16,9 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-background-surface-color: #ffffff;
+  --ifm-color-contact: #113250;
+  --tw-contact-icon-bg: var(--ifm-color-contact); /* circle */
+  --tw-contact-icon-fg: #fff; /* symbol */
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -149,5 +152,82 @@ a {
 
 .navbar__logo {
   width: 50px;
+  height: auto;
+}
+
+/* Contact links */
+/* Defaults (light mode) */
+:root {
+  --tw-contact-icon-bg: var(--ifm-color-primary);
+  --tw-contact-icon-fg: #fff;
+}
+
+/* Optional: override for dark mode */
+[data-theme='dark'] {
+  --tw-contact-icon-bg: var(--ifm-color-primary);
+  --tw-contact-icon-fg: #0b1220; /* or keep #fff if you prefer */
+}
+
+/* Layout + interaction */
+.twContactMethods {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.twContactItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.twContactItem:hover {
+  text-decoration: underline;
+}
+
+.twIcon {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.twSvg {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+/* The “magic”: colour control via CSS vars */
+.twIconBg { fill: var(--ifm-color-contact); }
+.twIconFg { fill: var(--tw-contact-icon-fg); }
+
+/* Optional hover effect */
+.twContactItem:hover .twIconBg {
+  filter: brightness(1.08);
+}
+
+/* Link text styling */
+.markdown a,
+.theme-doc-markdown a {
+  color: #113250;
+  text-decoration: underline;
+  text-underline-offset: 1px;
+}
+
+/* Nice hover */
+.markdown a:hover,
+.theme-doc-markdown a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Keep images responsive by default */
+.markdown img,
+.theme-doc-markdown img {
+  max-width: 100%;
   height: auto;
 }

@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Portfolio Intro
+# About Tech
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
