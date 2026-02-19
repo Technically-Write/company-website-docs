@@ -1,6 +1,6 @@
 ---
 title: Contact
-sidebar_position: 7
+displayed_sidebar: null
 ---
 
 # Get in Touch
