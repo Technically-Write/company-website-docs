@@ -37,7 +37,7 @@ function HomepageHeader() {
         aria-hidden="true"
       >
         {/* ✅ Updated to load video from R2 instead of /static */}
-        <source src={https://pub-44e9e263590e407f94e738c0c0b2a7be.r2.dev/hero-bg.mp4} type="video/mp4" />
+        <source src={HERO_VIDEO_URL} type="video/mp4" />
       </video>
 
       <div className={styles.heroOverlay}></div>
