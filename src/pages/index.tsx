@@ -21,37 +21,38 @@ function HomepageHeader() {
     }
   }, []);
 
+  // ✅ Replace this with your R2 Public Development URL host
+  // Example: https://pub-xxxxxxxxxxxxxxxxxxxx.r2.dev
+  const HERO_VIDEO_URL = 'https://pub-44e9e263590e407f94e738c0c0b2a7be.r2.dev';
+
   return (
     <header className={`${styles.heroBanner} hero hero--primary`}>
-  <video
-    ref={videoRef}
-    className={styles.heroVideo}
-    autoPlay
-    loop
-    muted
-    playsInline
-    aria-hidden="true"
-  >
-    <source src="/video/hero-bg.mp4" type="video/mp4" />
-  </video>
+      <video
+        ref={videoRef}
+        className={styles.heroVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
+        aria-hidden="true"
+      >
+        {/* ✅ Updated to load video from R2 instead of /static */}
+        <source src={HERO_VIDEO_URL} type="video/mp4" />
+      </video>
 
-  <div className={styles.heroOverlay}></div>
+      <div className={styles.heroOverlay}></div>
 
-  <div className={clsx('container', styles.heroContent)}>
+      <div className={clsx('container', styles.heroContent)}>
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
 
         <p className="hero__subtitle">{siteConfig.tagline}</p>
 
-        <p className="hero__description">
-          {heroDescription}
-        </p>
+        <p className="hero__description">{heroDescription}</p>
         <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/services">
-            Explore Services{" "}
+          <Link className="button button--secondary button--lg" to="/docs/services">
+            Explore Services{' '}
           </Link>
         </div>
       </div>
@@ -64,7 +65,8 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Description will go into a meta tag in <head />"
+    >
       <HomepageHeader />
       <main>
         <HomepageFeatures />
@@ -72,4 +74,3 @@ export default function Home(): ReactNode {
     </Layout>
   );
 }
-
