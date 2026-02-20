@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: ' ',
+  title: 'Ltd.',
   tagline: 'Clear technical documentation that simplifies complex products and helps your business to scale.',
   customFields: {
     heroDescription:
