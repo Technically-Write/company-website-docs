@@ -83,6 +83,14 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
+    announcementBar: {
+    id: 'free-review-2026-02', // change when you change the message
+    content:
+      '🛠️ Excuse the gaps and scaffolding — this site is still taking shape.<a href="/docs/contact">request yours</a>.',
+    backgroundColor: '#113250',
+    textColor: '#fff',
+    isCloseable: true,
+    },
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
       respectPrefersColorScheme: true,
