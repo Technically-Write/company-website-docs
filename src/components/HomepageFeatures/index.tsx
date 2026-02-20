@@ -26,7 +26,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'Book a Consultation',
     to: '/docs/contact',
-    Svg: require('@site/static/img/consultation.jpg').default,
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
         Book a Consultation to review your documentation and UX goals with an
