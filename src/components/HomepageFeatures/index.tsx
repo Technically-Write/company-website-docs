@@ -2,12 +2,14 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
   to: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Svg?: React.ComponentType<React.ComponentProps<'svg'>>;
+  Img?: string; // path under /static
   description: ReactNode;
 };
 
@@ -26,7 +28,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'Book a Consultation',
     to: '/docs/contact',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Img: 'img/consultation.png',
     description: (
       <>
         Book a Consultation to review your documentation and UX goals with an
@@ -36,19 +38,20 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Powered by React',
-    to: '/docs/tutorial-basics/create-a-page',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Want a Free 1-Hour Review?',
+    to: '/docs/contact',
+    Img: 'img/free-review.png',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Request a free documentation review to see how we can improve clarity and guide users better. We’ll highlight what’s working, what needs attention, and the next steps to fix it.
       </>
     ),
   },
 ];
 
-function Feature({title, to, Svg, description}: FeatureItem) {
+function Feature({title, to, Svg, Img, description}: FeatureItem) {
+  const imgUrl = Img ? useBaseUrl(Img) : undefined;
+
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -58,11 +61,15 @@ function Feature({title, to, Svg, description}: FeatureItem) {
           className={styles.featureLink}
           style={{display: 'inline-block', lineHeight: 0}}
         >
-          <Svg className={styles.featureSvg} role="img" />
+          {Svg ? (
+            <Svg className={styles.featureSvg} role="img" />
+          ) : Img ? (
+            <img className={styles.featureImg} src={imgUrl} alt={title} />
+          ) : null}
         </Link>
       </div>
 
-      <div className="text--center padding-horiz--md">
+      <div className="text--center padding-horiz--sm">
         <Heading as="h3">
           <Link to={to} className={styles.featureTitleLink}>
             {title}

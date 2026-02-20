@@ -9,3 +9,15 @@
   height: 200px;
   width: 200px;
 }
+
+/* Images on homepage */
+.featureImg {
+  height: 280px;
+  width: 375px;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 18px;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.20);
+  margin-bottom: 10px;
+}
+
