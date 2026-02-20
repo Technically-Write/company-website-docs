@@ -21,9 +21,9 @@ function HomepageHeader() {
     }
   }, []);
 
-  // ✅ Replace this with your R2 Public Development URL host
-  // Example: https://pub-xxxxxxxxxxxxxxxxxxxx.r2.dev
-  const HERO_VIDEO_URL = 'https://pub-44e9e263590e407f94e738c0c0b2a7be.r2.dev/hero-bg.mp4';
+  // ✅ R2 Public Development URL copied from Cloudflare for the MP4
+  const HERO_VIDEO_URL =
+    'https://pub-44e9e263590e407f94e738c0c0b2a7be.r2.dev/hero-bg.mp4';
 
   return (
     <header className={`${styles.heroBanner} hero hero--primary`}>
@@ -36,7 +36,6 @@ function HomepageHeader() {
         playsInline
         aria-hidden="true"
       >
-        {/* ✅ Updated to load video from R2 instead of /static */}
         <source src={HERO_VIDEO_URL} type="video/mp4" />
       </video>
 
