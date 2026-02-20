@@ -23,7 +23,7 @@ function HomepageHeader() {
 
   // ✅ Replace this with your R2 Public Development URL host
   // Example: https://pub-xxxxxxxxxxxxxxxxxxxx.r2.dev
-  const HERO_VIDEO_URL = 'https://pub-44e9e263590e407f94e738c0c0b2a7be.r2.dev';
+  const HERO_VIDEO_URL = 'https://pub-44e9e263590e407f94e738c0c0b2a7be.r2.dev/hero-bg.mp4';
 
   return (
     <header className={`${styles.heroBanner} hero hero--primary`}>
