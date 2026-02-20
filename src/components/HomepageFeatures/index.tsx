@@ -40,7 +40,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'Want a Free 1-Hour Review?',
     to: '/docs/contact',
-    Img: 'img/free-review.png',
+    Img: 'https://pub-44e9e263590e407f94e738c0c0b2a7be.r2.dev/free-review.png',
     description: (
       <>
         Request a free documentation review to see how we can improve clarity and guide users better. We’ll highlight what’s working, what needs attention, and the next steps to fix it.
