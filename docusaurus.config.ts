@@ -133,7 +133,7 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      links: [
+      /*links: [
         {
           title: 'Docs',
           items: [
@@ -174,6 +174,7 @@ const config: Config = {
           ],
         },
       ],
+      */
       copyright: `Copyright © ${new Date().getFullYear()} Technically Write Ltd., <br /> Company Reg. No.: NI720408. All rights reserved.`,
     },
     prism: {

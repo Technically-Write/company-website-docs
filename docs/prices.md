@@ -12,7 +12,7 @@ Every product, team, and documentation estate is different. For that reason, we 
 
 * **Project-Based Pricing** – a clear scope and deliverables, with a defined start and finish.
 
-* **Bespoke / Blended Delivery** – combine specialist skills to match the work at each stage (strategy, IA, style, tooling, UX writing, developer docs, governance).
+* **Bespoke / Blended Delivery** – combine specialist skills to match the work at each stage (strategy, AI, style, tooling, UX writing, developer docs, governance).
 
 ## The Right Expertise at the Right Time
 

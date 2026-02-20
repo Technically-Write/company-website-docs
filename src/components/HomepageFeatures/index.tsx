@@ -1,10 +1,12 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
+  to: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
 };
@@ -12,6 +14,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Easy to Use',
+    to: '/docs/intro',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
@@ -21,17 +24,20 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Book a Consultation',
+    to: '/docs/contact',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Book a Consultation to review your documentation and UX goals with an
+        experienced technical writing team. We’ll recommend a tailored strategy
+        to improve clarity, consistency, and customer adoption.
       </>
     ),
   },
   {
     title: 'Powered by React',
+    to: '/docs/tutorial-basics/create-a-page',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
@@ -42,14 +48,26 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, to, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Link
+          to={to}
+          aria-label={title}
+          className={styles.featureLink}
+          style={{display: 'inline-block', lineHeight: 0}}
+        >
+          <Svg className={styles.featureSvg} role="img" />
+        </Link>
       </div>
+
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+        <Heading as="h3">
+          <Link to={to} className={styles.featureTitleLink}>
+            {title}
+          </Link>
+        </Heading>
         <p>{description}</p>
       </div>
     </div>
