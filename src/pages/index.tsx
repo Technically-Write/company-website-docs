@@ -63,7 +63,7 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Technically Write Ltd.${siteConfig.title}`}
+      title={`Technically Write Ltd. | Simplifying Technical Documentation`}
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
