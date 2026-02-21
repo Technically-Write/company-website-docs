@@ -93,7 +93,9 @@ const config: Config = {
     },
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
-      respectPrefersColorScheme: true,
+    defaultMode: 'light',
+    disableSwitch: false,          // keep the toggle (set true to remove it)
+    respectPrefersColorScheme: false,
     },
     navbar: {
       title: 'Home',
