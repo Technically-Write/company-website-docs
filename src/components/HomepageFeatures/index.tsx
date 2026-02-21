@@ -16,7 +16,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'What do our customers say?',
-    to: '/docs/intro',
+    to: '/docs/customer-feedback',
     Img: 'img/customer-reviews.png',
     description: (
       <>
