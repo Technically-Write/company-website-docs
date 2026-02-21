@@ -51,7 +51,7 @@ function HomepageHeader() {
         <p className="hero__description">{heroDescription}</p>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/docs/services">
-            Explore Services{' '}
+            Explore services{' '}
           </Link>
         </div>
       </div>

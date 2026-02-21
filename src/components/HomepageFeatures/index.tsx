@@ -15,30 +15,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'What do our customers say?',
     to: '/docs/intro',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Img: 'img/customer-reviews.png',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        A snapshot of what it’s like to work with us. These testimonials reflect the quality, pace, and care we bring to every documentation project, and the impact on clarity and customer success.
       </>
     ),
   },
   {
-    title: 'Book a Consultation',
+    title: 'Book a consultation',
     to: '/docs/contact',
     Img: 'img/consultation.png',
     description: (
       <>
-        Book a Consultation to review your documentation and UX goals with an
-        experienced technical writing team. We’ll recommend a tailored strategy
+        Tell us your documentation and UX goals.
+        We’ll recommend a tailored strategy
         to improve clarity, consistency, and customer adoption.
       </>
     ),
   },
   {
-    title: 'Want a Free 1-Hour Review?',
+    title: 'Want a free 1-hour review?',
     to: '/docs/contact',
     Img: 'https://pub-44e9e263590e407f94e738c0c0b2a7be.r2.dev/free-review.png',
     description: (
