@@ -265,3 +265,12 @@ a {
     max-width: 380px;
   }
 }
+
+.footer {
+  background-color: #113250; /* change to your color */
+}
+
+/* Make the announcement bar close (X) white */
+div[class*='announcementBar'] button {
+  color: #fff !important;
+}
