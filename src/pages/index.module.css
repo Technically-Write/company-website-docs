@@ -23,10 +23,10 @@
   background: transparent !important;
 }
 
-/* Explicit height for the hero section */
+/* Explicit height for the hero section (taller to accommodate responsive text) */
 .heroBanner:global(.hero.hero--primary) {
   min-height: 0 !important;
-  height: clamp(420px, 60vh, 560px);
+  height: clamp(520px, 70vh, 720px);
   padding: 0;
 }
 
@@ -87,9 +87,27 @@
   justify-content: center; /* vertical centering */
 }
 
+/* --- Fluid hero typography to prevent overlap on small screens --- */
+.heroContent :global(.hero__title) {
+  font-size: clamp(1.9rem, 4.2vw, 3rem);
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+.heroContent :global(.hero__subtitle) {
+  font-size: clamp(1.05rem, 2.3vw, 1.5rem);
+  line-height: 1.25;
+}
+
+.heroContent :global(.hero__description) {
+  font-size: clamp(0.98rem, 2vw, 1.15rem);
+  line-height: 1.45;
+  max-width: 60ch;
+  margin: 0.75rem auto 0;
+}
+
 /* --- Mobile fixes: prevent top-line clipping under navbar / safe areas --- */
 @media screen and (max-width: 996px) {
-  /* Give extra top padding so the title never clips */
   .heroBanner {
     overflow: visible; /* allow content to render fully */
   }
@@ -100,16 +118,5 @@
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     padding-bottom: 2rem;
-  }
-
-  /* Slightly reduce title size/line-height for small screens */
-  .heroContent :global(.hero__title) {
-    margin-top: 0;
-    line-height: 1.15;
-    font-size: 2rem;
-  }
-
-  .heroContent :global(.hero__subtitle) {
-    line-height: 1.25;
   }
 }
