@@ -305,3 +305,26 @@ div[class*='announcementBar'] button {
   height: auto;
   border-radius: 16px; /* optional */
 }
+
+/* Contact form */
+.twJotformWrap {
+  width: 45%;
+  margin-top: 0px;
+}
+
+.twJotformFrame {
+  width: 100%;
+  margin-top: 10px;
+  border: 2px solid rgba(0,0,0,0.12);
+  height: 1100px;   /* increase until no inner scroll */
+}
+
+/* Contact page right-column image sizing */
+.twContactImage {
+  display: block;
+  width: 89% !important;         /* try 60–85% */
+  max-width: 360px;    /* hard cap on desktop */
+  height: auto !important;
+  margin: 40px 0 0; /* keeps it centered + adds your top spacing */
+  border-radius: 16px; /* optional */
+}
