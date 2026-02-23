@@ -274,3 +274,34 @@ a {
 div[class*='announcementBar'] button {
   color: #fff !important;
 }
+
+.annalong {
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Two-column layout for the Contact page */
+.twTwoCol {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.twTwoColLeft {
+  flex: 1 1 420px;
+  min-width: 280px;
+}
+
+.twTwoColRight {
+  flex: 0 1 500px;
+  min-width: 280px;
+}
+
+.twTwoColRight img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px; /* optional */
+}
