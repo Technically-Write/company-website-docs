@@ -9,11 +9,13 @@ hide_table_of_contents: true
 <div className="twTwoCol">
   <div className="twTwoColLeft">
 
+
 Thanks for your interest in Technically Write Ltd. We’d love to hear from you. If you have a question or want to discuss an upcoming project, let us know.
 
 At Technically Write Ltd., we deliver high-quality content and UX solutions built around your business goals. Whether you want to refresh your in-product branding, improve internal or external documentation, elevate the overall look and feel of your content, or migrate to a new documentation tool, we’re here to make it happen.
 
 We’re based in Annalong, County Down, Northern Ireland, which is conveniently located between Belfast and Dublin. We can support clients across Northern Ireland, Ireland, and the wider UK. We work remotely as standard for most engagements, but can accommodate on-site meetings when required.
+<br />
 
 <div className="twContactPage">
   <div className="twContactMethods">
