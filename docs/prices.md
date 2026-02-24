@@ -8,6 +8,10 @@ Every product, team, and documentation estate is different. For that reason, we 
 
 ## Flexible engagement models
 
+:::note
+We never quote or enage on a per-word-rate basis. Great documentation can never be judged by the word count, because it takes comparitively little time to generate an entire section of waffle, but sometimes many hours to generate a single critical page of quality content.
+:::
+
 * **Hourly Support** – ideal for short, contained tasks, audits, rewrites, quick wins, or perhaps smaller 'grey' projects where it is difficult to predict the effort required.
 
 * **Project-Based Pricing** – a clear scope and deliverables, with a defined start and finish.
