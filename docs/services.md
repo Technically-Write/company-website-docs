@@ -4,7 +4,7 @@ hide_table_of_contents: true
 title: Services
 ---
 
-# Here’s What We Do
+# Here’s what we do
 
 🔧 **𝙉𝙚𝙬 𝘿𝙤𝙘𝙪𝙢𝙚𝙣𝙩𝙖𝙩𝙞𝙤𝙣 𝙏𝙚𝙖𝙢 𝙎𝙚𝙩𝙪𝙥**  
  We help you to build your tooling solutions, the team, content strategy, and documentation-as-a-product approach.

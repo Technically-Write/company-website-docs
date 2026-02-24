@@ -5,7 +5,7 @@ hide_table_of_contents: true
 
 # Portfolio
 
-## Documentation Portfolio
+## Documentation portfolio
 Below is a small selection of documentation sites delivered in whole or in part by authors at Technically Write Ltd. These examples reflect the range of platforms and publishing workflows we support across developer documentation, product documentation, and API reference. Keep in mind that very often, Technically Write Ltd. must work on some customer projects with the tools and structure already in place. 
 
 :::note
@@ -54,6 +54,6 @@ API reference and developer guidance for the Continuous Dynamic API suite. Durin
 
 ---
 <br />
-## UX Portfolio
+## UX portfolio
 
 Coming soon...

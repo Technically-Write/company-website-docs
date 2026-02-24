@@ -4,7 +4,7 @@ displayed_sidebar: null
 hide_table_of_contents: true
 ---
 
-# Get in Touch
+# Get in touch
 
 <div className="twTwoCol">
   <div className="twTwoColLeft">

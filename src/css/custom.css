@@ -260,10 +260,25 @@ a {
     flex-direction: column;
   }
 
+  /* Make the image shrink with available width */
   .twBioImage {
     width: 100%;
     max-width: 380px;
+    height: auto;
   }
+}
+
+/* Desktop/tablet: keep two columns, but allow image to shrink as the page narrows */
+.twBioImage {
+  width: 47%;
+  max-width: 280px;   /* cap on large screens */
+  height: auto;
+  display: block;
+}
+
+/* IMPORTANT: allow the image column to shrink in flex layouts */
+.twBioTop > * {
+  min-width: 0;
 }
 
 .footer {

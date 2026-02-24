@@ -3,6 +3,6 @@ displayed_sidebar: null
 hide_table_of_contents: true
 ---
 
-# Customer Feedback
+# Customer feedback
 
 Content coming soon...
