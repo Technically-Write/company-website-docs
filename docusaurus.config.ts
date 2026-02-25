@@ -92,7 +92,7 @@ const config: Config = {
     textColor: '#fff',
     isCloseable: true,
     },
-    image: '/static/img/social-card.jpg',
+    image: '/img/social-card.jpg',
     colorMode: {
     defaultMode: 'light',
     disableSwitch: false,          // keep the toggle (set true to remove it)
