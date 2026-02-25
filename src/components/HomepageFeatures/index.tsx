@@ -20,7 +20,9 @@ const FeatureList: FeatureItem[] = [
     Img: 'img/customer-reviews.png',
     description: (
       <>
-        A snapshot of what it’s like to work with us. These testimonials reflect the quality, pace, and care we bring to every documentation project, and the impact on clarity and customer success.
+        A snapshot of what it’s like to work with us. These testimonials reflect
+        the quality, pace, and care we bring to every documentation project, and
+        the impact on clarity and customer success.
       </>
     ),
   },
@@ -30,9 +32,8 @@ const FeatureList: FeatureItem[] = [
     Img: 'img/consultation.png',
     description: (
       <>
-        Tell us your documentation and UX goals.
-        We’ll recommend a tailored strategy
-        to improve clarity, consistency, and customer adoption.
+        Tell us your documentation and UX goals. We’ll recommend a tailored
+        strategy to improve clarity, consistency, and customer adoption.
       </>
     ),
   },
@@ -42,7 +43,9 @@ const FeatureList: FeatureItem[] = [
     Img: 'https://pub-44e9e263590e407f94e738c0c0b2a7be.r2.dev/free-review.png',
     description: (
       <>
-        Request a free documentation review to see how we can improve clarity and guide users better. We’ll highlight what’s working, what needs attention, and the next steps to fix it.
+        Request a free documentation review to see how we can improve clarity
+        and guide users better. We’ll highlight what’s working, what needs
+        attention, and the next steps to fix it.
       </>
     ),
   },
@@ -52,29 +55,32 @@ function Feature({title, to, Svg, Img, description}: FeatureItem) {
   const imgUrl = Img ? useBaseUrl(Img) : undefined;
 
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Link
-          to={to}
-          aria-label={title}
-          className={styles.featureLink}
-          style={{display: 'inline-block', lineHeight: 0}}
-        >
-          {Svg ? (
-            <Svg className={styles.featureSvg} role="img" />
-          ) : Img ? (
-            <img className={styles.featureImg} src={imgUrl} alt={title} />
-          ) : null}
-        </Link>
-      </div>
-
-      <div className="text--center padding-horiz--sm">
-        <Heading as="h3">
-          <Link to={to} className={styles.featureTitleLink}>
-            {title}
+    <div className={clsx('col col--4', styles.featureCol)}>
+      {/* This wrapper constrains BOTH image + text to the same width */}
+      <div className={styles.featureInner}>
+        <div className="text--center">
+          <Link
+            to={to}
+            aria-label={title}
+            className={styles.featureLink}
+            /* removed inline display/lineHeight so CSS controls layout */
+          >
+            {Svg ? (
+              <Svg className={styles.featureSvg} role="img" />
+            ) : Img ? (
+              <img className={styles.featureImg} src={imgUrl} alt={title} />
+            ) : null}
           </Link>
-        </Heading>
-        <p>{description}</p>
+        </div>
+
+        <div className={clsx('text--center', styles.featureText)}>
+          <Heading as="h3">
+            <Link to={to} className={styles.featureTitleLink}>
+              {title}
+            </Link>
+          </Heading>
+          <p>{description}</p>
+        </div>
       </div>
     </div>
   );

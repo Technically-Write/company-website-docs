@@ -10,14 +10,81 @@
   width: 200px;
 }
 
-/* Images on homepage */
-.featureImg {
-  height: 280px;
-  width: 375px;
-  max-width: 100%;
-  object-fit: contain;
+/* =========================================================
+   Homepage feature image "panel" (the clickable Link wrapper)
+   - Force flex so images center vertically + horizontally
+   ========================================================= */
+.featureLink {
+  display: flex !important;          /* overrides inline-block from JSX */
+  align-items: center !important;    /* vertical centering */
+  justify-content: center !important;/* horizontal centering */
+
+  width: 100%;
+  max-width: 375px;
+  height: 280px;                     /* consistent panel height */
+  padding: 14px;
+  box-sizing: border-box;
+
+  background: #ffffff;
   border-radius: 18px;
-  box-shadow: 10px 10px 20px rgba(0,0,0,0.20);
-  margin-bottom: 10px;
+  border: 1px solid rgba(17, 50, 80, 0.08);
+
+  /* Panel shadow */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.20);
+
+  /* avoid baseline/line-box quirks */
+  line-height: normal;
+
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
 }
 
+.featureLink:hover {
+  transform: translateY(-2px);
+  box-shadow: 12px 12px 26px rgba(0, 0, 0, 0.24);
+  border-color: rgba(17, 50, 80, 0.16);
+}
+
+/* =========================================================
+   Images on homepage (fit inside the panel)
+   ========================================================= */
+.featureImg {
+  display: block;
+  margin: 0 !important;
+  align-self: center;
+
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+
+  border-radius: 12px;
+}
+
+/* =========================================================
+   Dark mode: panel needs a visible edge on dark background
+   ========================================================= */
+[data-theme='dark'] .featureLink {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(227, 227, 227, 0.16);
+  box-shadow:
+    0 0 0 1px rgba(227, 227, 227, 0.06),
+    10px 10px 20px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme='dark'] .featureLink:hover {
+  transform: translateY(-2px);
+  border-color: rgba(227, 227, 227, 0.26);
+  box-shadow:
+    0 0 0 1px rgba(227, 227, 227, 0.10),
+    12px 12px 26px rgba(0, 0, 0, 0.55);
+}
+
+.featureInner {
+  width: 100%;
+  max-width: 375px; /* must match .featureLink max-width */
+  margin: 0 auto;   /* centers within each column */
+}
+
+.featureText {
+  margin-top: 12px;
+  padding: 0 6px;
+}

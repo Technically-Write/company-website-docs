@@ -10,7 +10,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
   customFields: {
     heroDescription:
-      'Technical writing and documentation built for real users, real products, and growing organisations.',
+      'Documentation built for real users, real products, and growing organisations.',
   },
 
   stylesheets: [
