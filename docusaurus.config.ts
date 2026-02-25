@@ -34,8 +34,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Technically-Write', // Usually your GitHub org/user name.
+  projectName: 'company-website-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -92,7 +92,7 @@ const config: Config = {
     textColor: '#fff',
     isCloseable: true,
     },
-    image: 'img/social-card.png',
+    image: '/static/img/social-card.jpg',
     colorMode: {
     defaultMode: 'light',
     disableSwitch: false,          // keep the toggle (set true to remove it)
