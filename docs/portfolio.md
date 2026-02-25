@@ -33,7 +33,7 @@ R3 develops Corda, an enterprise distributed ledger platform used to build and r
 
 ---
 
-**[Trilio for Kubernetes](https://docs.trilio.io/kubernetes)**    
+**[Trilio (for Kubernetes)](https://docs.trilio.io/kubernetes)**    
 **Stack:** GitBook  
 
 Documentation for Trilio’s Kubernetes-focused data protection and backup solution. Contributions were made across the wider doc set during the engagement, with the majority focused on Kubernetes content.
@@ -55,5 +55,6 @@ API reference and developer guidance for the Continuous Dynamic API suite. Durin
 ---
 <br />
 ## UX portfolio
+<br />
 
-Coming soon...
+![Business money](../static/img/ux-customers.png)

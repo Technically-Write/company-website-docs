@@ -4,8 +4,11 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+/* =========================================================
+   Base (light mode)
+   ========================================================= */
 :root {
+  /* Theme + brand */
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -13,16 +16,36 @@
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
+
+  --ifm-background-surface-color: #ffffff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-background-surface-color: #ffffff;
+
+  /* Typography */
+  --ifm-font-family-base: "Poppins", "Nunito", "Roboto", "Lato",
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Brand “contact” colour */
   --ifm-color-contact: #113250;
+
+  /* LINK COLOURS (light mode) */
+  --ifm-link-color: #113250;
+  --ifm-link-hover-color: #113250;
+  --ifm-link-decoration: underline;
+
+  /* Navbar link colours (light mode) */
+  --ifm-navbar-link-color: #113250;
+
+  /* Contact icon colours */
   --tw-contact-icon-bg: var(--ifm-color-contact); /* circle */
   --tw-contact-icon-fg: #fff; /* symbol */
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+/* =========================================================
+   Dark mode overrides
+   ========================================================= */
+[data-theme="dark"] {
+  /* For readability concerns, choose a lighter palette in dark mode. */
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -30,65 +53,68 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
+
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* LINK COLOURS (dark mode) */
+  --ifm-navbar-link-color: #113250;
+  --ifm-link-hover-color: #113250;
+  --ifm-link-decoration: underline;
+
+  /* Navbar link colours (dark mode) */
+  --ifm-navbar-link-color: #113250;
+
+  /* Contact icons in dark mode (keep circle primary, tweak fg if desired) */
+  --tw-contact-icon-bg: var(--ifm-color-primary);
+  --tw-contact-icon-fg: #0b1220; /* set to #fff if you prefer */
 }
 
+/* =========================================================
+   Hero
+   ========================================================= */
 .hero--primary {
-    --ifm-hero-background-color: var(--ifm-color-primary);
-    --ifm-hero-text-color: var(--ifm-font-color-base-inverse);
+  --ifm-hero-background-color: var(--ifm-color-primary);
+  --ifm-hero-text-color: var(--ifm-font-color-base-inverse);
 }
 
+/* Override hero background explicitly */
 .hero--primary {
-    --ifm-hero-background-color: #113250;
-}
-
-.navbar__link {
-    color: #113250;
-}
-
-a {
-    color: #113250;
-}
-
-:root {
-  --ifm-font-family-base: 'Poppins', 'Nunito', 'Roboto', 'Lato',
-    system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', sans-serif;
+  --ifm-hero-background-color: #113250;
 }
 
 .hero__title {
-    color: #ffffff;
-    font-family: "Nunito", Sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 30px;
-    margin: 0px 0px 10px 0px;
-    z-index: 4;
-    position: relative;
+  color: #ffffff;
+  font-family: "Nunito", Sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 0px 0px 10px 0px;
+  z-index: 4;
+  position: relative;
 }
 
 .hero__subtitle {
-    color: #ffffff;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    margin: 0px 0px 30px 0px;
-    font-family: "Lato", Sans-serif;
-    font-size: 38px;
-    font-weight: 900;
-    text-transform: uppercase;
-    line-height: 49px;
-    position: relative;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  margin: 0px 0px 30px 0px;
+  font-family: "Lato", Sans-serif;
+  font-size: 38px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 49px;
+  position: relative;
 }
 
 .hero__description {
-    color: #ffffff;
-    font-family: "Roboto", Sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    margin: 0px 0px 0px 0px;
-    text-transform: none;
-    padding-bottom: 20px;
-    position: relative;
+  color: #ffffff;
+  font-family: "Roboto", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0px 0px 0px 0px;
+  text-transform: none;
+  padding-bottom: 20px;
+  position: relative;
 }
 
 /* VIDEO HOMESCREEN */
@@ -124,10 +150,6 @@ a {
   position: relative;
   z-index: 9999;
   pointer-events: auto;
-}
-
-
-.heroBanner :global(.container) {
   animation: fadeUp 0.8s ease-out both;
 }
 
@@ -142,6 +164,7 @@ a {
   }
 }
 
+/* Remove default hero pseudo elements */
 .heroBanner:global(.hero)::before,
 .heroBanner:global(.hero)::after,
 :global(.hero).heroBanner::before,
@@ -150,25 +173,176 @@ a {
   display: none !important;
 }
 
+/* =========================================================
+   Navbar / Logo
+   ========================================================= */
 .navbar__logo {
   width: 50px;
   height: auto;
 }
 
-/* Contact links */
-/* Defaults (light mode) */
-:root {
-  --tw-contact-icon-bg: var(--ifm-color-primary);
-  --tw-contact-icon-fg: #fff;
+/* Use theme variables for non-global links */
+/* Navbar links (light mode defaults via variables) */
+.navbar__link {
+  color: var(--ifm-navbar-link-color);
+  text-decoration: none;
+  display: inline-block;
+  transition: color 160ms ease, transform 160ms ease,
+    text-decoration-color 160ms ease, text-decoration-thickness 160ms ease;
 }
 
-/* Optional: override for dark mode */
-[data-theme='dark'] {
-  --tw-contact-icon-bg: var(--ifm-color-primary);
-  --tw-contact-icon-fg: #0b1220; /* or keep #fff if you prefer */
+.navbar__link:hover {
+  color: var(--ifm-navbar-link-hover-color);
+  transform: translateY(-1px);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: currentColor;
+  cursor: pointer;
 }
 
-/* Layout + interaction */
+/* Navbar links (dark mode override — set your colours here) */
+[data-theme="dark"] .navbar__link {
+  color: var(--ifm-navbar-link-color); /* default in dark mode */
+}
+
+[data-theme="dark"] .navbar__link:hover {
+  color: var(--ifm-navbar-link-hover-color); /* hover in dark mode */
+}
+
+/* Navbar brand title (light mode defaults via variables) */
+.navbar__brand .navbar__title {
+  color: var(--ifm-navbar-link-color); /* or var(--ifm-link-color) if you prefer */
+  text-decoration: none;
+  display: inline-block;
+  transition: color 160ms ease, transform 160ms ease,
+    text-decoration-color 160ms ease, text-decoration-thickness 160ms ease;
+}
+
+/* Hover the whole brand (logo OR title) to affect the title */
+.navbar__brand:hover .navbar__title {
+  color: var(--ifm-navbar-link-hover-color);
+  transform: translateY(-1px);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: currentColor;
+  cursor: pointer;
+}
+
+/* Dark mode override — set your colours here */
+[data-theme="dark"] .navbar__brand .navbar__title {
+  color: var(--ifm-navbar-link-color); /* default in dark mode */
+}
+
+[data-theme="dark"] .navbar__brand:hover .navbar__title {
+  color: var(--ifm-navbar-link-hover-color); /* hover in dark mode */
+}
+
+.button.button--secondary.button--lg {
+  color: var(--ifm-navbar-link-color);
+  text-decoration: none;
+  display: inline-block; /* required for transform to feel nice */
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.button.button--secondary button--lg:hover {
+  color: var(--ifm-navbar-link-color);
+  text-decoration: var(--ifm-link-decoration);
+  transform: scaleX(1);
+  transform: translateY(-1px);
+}
+
+.navbar__title.text--truncate {
+  color: var(--ifm-navbar-link-color);
+  text-decoration: none;
+  display: inline-block; /* required for transform to feel nice */
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.button.button--secondary button--lg:hover {
+  color: var(--ifm-navbar-link-color);
+  text-decoration: var(--ifm-link-decoration);
+  transform: scaleX(1);
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   Global link styling (no hard-coded colours)
+   ========================================================= */
+a {
+  color: var(--ifm-link-color);
+  text-decoration: none;
+  font-weight:bold;
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+a:hover {
+  color: var(--ifm-link-hover-color);
+  text-decoration: var(--ifm-link-decoration);
+  transform: scaleX(1);
+  transform: translateY(-1px);
+}
+
+/* Dark mode link styling (same colour for normal + hover) */
+[data-theme="dark"] a {
+  color: #E3E3E3;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+[data-theme="dark"] a:hover {
+  color: #E3E3E3;
+  text-decoration: var(--ifm-link-decoration);
+  transform: translateY(-1px);
+}
+
+/* Doc/Markdown link styling (keeps underline look consistent) */
+.markdown a,
+.theme-doc-markdown a {
+  color: var(--ifm-link-color);
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.markdown a:hover,
+.theme-doc-markdown a:hover {
+  color: var(--ifm-link-color);
+  transform: scaleX(1);
+  transform: translateY(-1px);
+}
+
+/* Dark mode: make links feel more interactive (same text colour, clearer hover) */
+[data-theme="dark"] .markdown a,
+[data-theme="dark"] .theme-doc-markdown a {
+  color: #E3E3E3;
+  text-decoration: underline;
+  text-decoration-color: rgba(227, 227, 227, 0.55); /* softer underline at rest */
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  transition: transform 160ms ease, text-decoration-color 160ms ease,
+    text-decoration-thickness 160ms ease;
+}
+
+[data-theme="dark"] .markdown a:hover,
+[data-theme="dark"] .theme-doc-markdown a:hover {
+  color: #E3E3E3; /* unchanged */
+  transform: translateY(-1px);
+  text-decoration-color: rgba(227, 227, 227, 0.95); /* stronger underline */
+  text-decoration-thickness: 2px;                  /* thicker underline */
+  cursor: pointer;
+}
+
+/* Keep images responsive by default */
+.markdown img,
+.theme-doc-markdown img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================================================
+   Contact links
+   ========================================================= */
 .twContactMethods {
   display: grid;
   gap: 0.75rem;
@@ -202,38 +376,22 @@ a {
   display: block;
 }
 
-/* The “magic”: colour control via CSS vars */
-.twIconBg { fill: var(--ifm-color-contact); }
-.twIconFg { fill: var(--tw-contact-icon-fg); }
+/* Colour control via CSS vars */
+.twIconBg {
+  fill: var(--tw-contact-icon-bg);
+}
+.twIconFg {
+  fill: var(--tw-contact-icon-fg);
+}
 
 /* Optional hover effect */
 .twContactItem:hover .twIconBg {
   filter: brightness(1.08);
 }
 
-/* Link text styling */
-.markdown a,
-.theme-doc-markdown a {
-  color: #113250;
-  text-decoration: underline;
-  text-underline-offset: 1px;
-}
-
-/* Nice hover */
-.markdown a:hover,
-.theme-doc-markdown a:hover {
-  text-decoration-thickness: 2px;
-}
-
-/* Keep images responsive by default */
-.markdown img,
-.theme-doc-markdown img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-/* About Company - bios */
+/* =========================================================
+   About Company - bios
+   ========================================================= */
 .twBioTop {
   display: flex;
   gap: 1.5rem;
@@ -248,9 +406,10 @@ a {
 
 .twBioImage {
   flex: 0 0 auto;
-  width: 550px;      /* tweak this */
-  max-width: 40%;
+  width: 47%;
+  max-width: 280px; /* cap on large screens */
   height: auto;
+  display: block;
   border-radius: 12px;
 }
 
@@ -260,7 +419,6 @@ a {
     flex-direction: column;
   }
 
-  /* Make the image shrink with available width */
   .twBioImage {
     width: 100%;
     max-width: 380px;
@@ -268,25 +426,20 @@ a {
   }
 }
 
-/* Desktop/tablet: keep two columns, but allow image to shrink as the page narrows */
-.twBioImage {
-  width: 47%;
-  max-width: 280px;   /* cap on large screens */
-  height: auto;
-  display: block;
-}
-
 /* IMPORTANT: allow the image column to shrink in flex layouts */
 .twBioTop > * {
   min-width: 0;
 }
 
+/* =========================================================
+   Footer
+   ========================================================= */
 .footer {
   background-color: #113250; /* change to your color */
 }
 
 /* Make the announcement bar close (X) white */
-div[class*='announcementBar'] button {
+div[class*="announcementBar"] button {
   color: #fff !important;
 }
 
@@ -296,6 +449,9 @@ div[class*='announcementBar'] button {
   height: auto;
 }
 
+/* =========================================================
+   Contact page layout
+   ========================================================= */
 /* Two-column layout for the Contact page */
 .twTwoCol {
   display: flex;
@@ -330,16 +486,27 @@ div[class*='announcementBar'] button {
 .twJotformFrame {
   width: 100%;
   margin-top: 10px;
-  border: 2px solid rgba(0,0,0,0.12);
-  height: 1200px;   /* increase until no inner scroll */
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  height: 1200px; /* increase until no inner scroll */
 }
 
 /* Contact page right-column image sizing */
 .twContactImage {
   display: block;
-  width: 93% !important;         /* try 60–85% */
-  max-width: 360px;    /* hard cap on desktop */
+  width: 93% !important;
+  max-width: 360px; /* hard cap on desktop */
   height: auto !important;
   margin: 50px 0 0; /* keeps it centered + adds your top spacing */
   border-radius: 16px; /* optional */
+}
+
+/* Contact page text colour in dark mode */
+[data-theme="dark"] .twContactPage,
+[data-theme="dark"] .twContactPage .twContactItem,
+[data-theme="dark"] .twContactPage .twContactItem span {
+  color: #E3E3E3;
+}
+
+[data-theme="dark"] .twContactPage .twContactItem:hover {
+  color: #E3E3E3;
 }
