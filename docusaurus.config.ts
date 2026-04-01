@@ -87,7 +87,7 @@ const config: Config = {
     announcementBar: {
     id: 'free-review-2026-02', // change when you change the message
     content:
-      '🛠️ Excuse the gaps and scaffolding — this site is still taking shape.<a href="/docs/contact">request yours</a>.',
+      '🛠️ Excuse the gaps and scaffolding — this site is still taking shape.<a href="/docs/contact"></a>.',
     backgroundColor: '#113250',
     textColor: '#fff',
     isCloseable: true,
