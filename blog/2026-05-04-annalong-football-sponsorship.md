@@ -1,0 +1,18 @@
+---
+slug: annalong-fc-sponsorship-may26
+title: Proud to Support Grassroots Football in Annalong Once Again
+authors: [chillis]
+---
+
+Technically Write Ltd. is proud to continue supporting football in our local community here in Annalong. Once again, we are sponsoring Annalong Football Club; providing match footballs and renewing our pitchside advertising.
+
+Grassroots sport plays a vital role in bringing communities together, and we’re delighted to play a very small part in supporting the club and the players. Wishing the lads every success in their final games of the season! ⚽💪
+
+#GrassrootsFootball #Community #SupportLocal #Annalong #TechnicallyWrite #AnnalongFC #CommunitySupport #AmateurFootball 
+#NorthernIrelandFootball #NewryMourneDown
+
+![Annalong FC 2](../static/img/annalong-fc4.png)
+
+![Annalong FC 1](../static/img/annalong-fc3.png)
+
+[**Contact Us**](../docs/contact)
