@@ -6,11 +6,11 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: ' ',
-  tagline: 'Clear technical documentation that simplifies complex products and helps your business to scale.',
+  tagline: 'Technical documentation that reduces support tickets and drives product adoption.',
   favicon: 'img/favicon.ico',
   customFields: {
     heroDescription:
-      'Documentation built for real users, real products, and growing organisations.',
+      'For software teams creating complex products that need structured, scalable, user-focused documentation.',
   },
 
   stylesheets: [
