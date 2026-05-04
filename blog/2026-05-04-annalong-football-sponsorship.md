@@ -1,6 +1,6 @@
 ---
 slug: annalong-fc-sponsorship-may26
-title: Proud to Support Grassroots Football in Annalong Once Again
+title: Proud to Support Grassroots Football in Annalong Again
 authors: [chillis]
 ---
 
