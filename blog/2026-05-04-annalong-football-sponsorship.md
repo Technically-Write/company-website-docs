@@ -15,4 +15,4 @@ Grassroots sport plays a vital role in bringing communities together, and we’r
 
 ![Annalong FC 1](../static/img/annalong-fc3.png)
 
-[**Contact Us**](../docs/contact)
+[**Contact Us**](../docs/contact.md)
