@@ -267,7 +267,7 @@ export default function Home(): ReactNode {
               '@type': 'WebPage',
               '@id': 'https://www.technicallywrite.co.uk/#webpage',
               name:
-                'Technically Write Ltd. | Technical Documentation for Software Teams',
+                'Technical Documentation for Software Teams',
               url: 'https://www.technicallywrite.co.uk/',
               description:
                 'Technical documentation services for software teams creating complex products. Reduce support tickets and drive product adoption with structured, scalable documentation.',

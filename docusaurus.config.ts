@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: ' ',
+  title: 'Technically Write Ltd.',
   tagline: 'Technical documentation that reduces support tickets and drives product adoption.',
   favicon: 'img/favicon.ico',
   customFields: {
@@ -87,7 +87,7 @@ const config: Config = {
     announcementBar: {
     id: 'free-review-2026-02', // change when you change the message
     content:
-      '🛠️ Excuse the gaps and scaffolding — this site is still taking shape..<a href="/docs/contact"></a>.',
+      '🛠️ Excuse the gaps and scaffolding — this site is still taking shape.',
     backgroundColor: '#113250',
     textColor: '#fff',
     isCloseable: true,
@@ -101,7 +101,7 @@ const config: Config = {
     navbar: {
       title: 'Home',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Technically Write Ltd. logo',
         src: 'img/tw-icon.jpg',
       },
       items: [
