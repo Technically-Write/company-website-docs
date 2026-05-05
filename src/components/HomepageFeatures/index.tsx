@@ -38,7 +38,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Want a free 1-hour review?',
+    title: 'Get a free docs audit',
     to: '/docs/contact',
     Img: 'https://pub-44e9e263590e407f94e738c0c0b2a7be.r2.dev/free-review.png',
     description: (
