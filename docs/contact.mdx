@@ -1,9 +1,150 @@
 ---
 title: Contact Technically Write Ltd.
-description: Contact Technically Write Ltd. to discuss technical documentation, documentation audits, and support for complex software products.
+description: 'Contact Technically Write Ltd. to book a consultation, request a free docs audit, or discuss technical documentation support for complex software products.'
 displayed_sidebar: null
 hide_table_of_contents: true
 ---
+
+import Schema from '@site/src/components/Schema';
+
+<Schema
+  data={{
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'ContactPage',
+        '@id': 'https://www.technicallywrite.co.uk/docs/contact#contactpage',
+        name: 'Contact Technically Write Ltd.',
+        url: 'https://www.technicallywrite.co.uk/docs/contact',
+        description:
+          'Book a consultation or request a free docs audit with Technically Write Ltd.',
+        isPartOf: {
+          '@id': 'https://www.technicallywrite.co.uk/#website',
+        },
+        about: [
+          {
+            '@id': 'https://www.technicallywrite.co.uk/#professionalservice',
+          },
+          {
+            '@id': 'https://www.technicallywrite.co.uk/docs/services#services',
+          },
+        ],
+        mainEntity: {
+          '@id': 'https://www.technicallywrite.co.uk/docs/contact#contactpoint',
+        },
+        contentLocation: {
+          '@id': 'https://www.technicallywrite.co.uk/docs/contact#location',
+        },
+        primaryImageOfPage: {
+          '@id': 'https://www.technicallywrite.co.uk/docs/contact#annalong-image',
+        },
+      },
+      {
+        '@type': 'ContactPoint',
+        '@id': 'https://www.technicallywrite.co.uk/docs/contact#contactpoint',
+        contactType: 'sales',
+        email: 'info@technicallywrite.co.uk',
+        telephone: '+447830392955',
+        availableLanguage: 'English',
+        areaServed: [
+          'United Kingdom',
+          'Ireland',
+          'United States',
+          'European Union',
+        ],
+      },
+      {
+        '@type': 'Place',
+        '@id': 'https://www.technicallywrite.co.uk/docs/contact#location',
+        name: 'Annalong',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Annalong',
+          addressRegion: 'County Down, Northern Ireland',
+          addressCountry: 'GB',
+        },
+      },
+      {
+        '@type': 'ImageObject',
+        '@id': 'https://www.technicallywrite.co.uk/docs/contact#annalong-image',
+        name: 'Annalong, County Down, Northern Ireland',
+        contentUrl: 'https://www.technicallywrite.co.uk/img/annalong-1.png',
+        caption:
+          'Technically Write Ltd. is based in Annalong, County Down, Northern Ireland.',
+      },
+      {
+        '@type': 'Offer',
+        '@id': 'https://www.technicallywrite.co.uk/docs/contact#consultation',
+        name: 'Book a consultation',
+        url: 'https://www.technicallywrite.co.uk/docs/contact',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Technical documentation consultation',
+          description:
+            'A consultation to discuss technical documentation, documentation strategy, and content support for complex products.',
+          provider: {
+            '@id': 'https://www.technicallywrite.co.uk/#organization',
+          },
+          serviceType: [
+            'Technical documentation',
+            'Technical writing',
+            'Software documentation',
+            'API documentation',
+            'Documentation strategy',
+          ],
+        },
+        seller: {
+          '@id': 'https://www.technicallywrite.co.uk/#organization',
+        },
+      },
+      {
+        '@type': 'Offer',
+        '@id': 'https://www.technicallywrite.co.uk/docs/contact#free-docs-audit',
+        name: 'Free Docs Audit',
+        url: 'https://www.technicallywrite.co.uk/docs/contact',
+        price: '0',
+        priceCurrency: 'GBP',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Free documentation audit',
+          description:
+            'A free documentation review to identify opportunities to improve clarity, structure, user guidance, and product adoption.',
+          provider: {
+            '@id': 'https://www.technicallywrite.co.uk/#organization',
+          },
+          serviceType: [
+            'Documentation audits',
+            'Technical documentation',
+            'Software documentation',
+            'Knowledge base documentation',
+            'Documentation strategy',
+          ],
+        },
+        seller: {
+          '@id': 'https://www.technicallywrite.co.uk/#organization',
+        },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': 'https://www.technicallywrite.co.uk/docs/contact#breadcrumb',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://www.technicallywrite.co.uk/',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Contact',
+            item: 'https://www.technicallywrite.co.uk/docs/contact',
+          },
+        ],
+      },
+    ],
+  }}
+/>
 
 # Get in touch
 
@@ -50,7 +191,7 @@ We’re based in Annalong, County Down, Northern Ireland, which is conveniently 
 
     <a
       className="twContactItem"
-      href="https://www.linkedin.com/company/104971997"
+      href="https://www.linkedin.com/company/technically-write"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -68,7 +209,7 @@ We’re based in Annalong, County Down, Northern Ireland, which is conveniently 
     </a>
   </div>
   <div className="twTwoColRight">
-    <img className="twContactImage" src="/img/annalong-1.png" alt="Annalong" width="100%" />
+    <img className="twContactImage" src="/img/annalong-1.png" alt="View of Annalong, County Down, Northern Ireland" width="100%" />
   </div>
 </div>
 
@@ -81,7 +222,7 @@ We’re based in Annalong, County Down, Northern Ireland, which is conveniently 
     title="Contact form"
     loading="lazy"
     scrolling="no"
-    frameborder="0"
+    frameBorder="0"
   ></iframe>
 </div>
 </div>

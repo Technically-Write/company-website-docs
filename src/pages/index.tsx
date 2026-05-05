@@ -82,7 +82,7 @@ export default function Home(): ReactNode {
             logo: 'https://www.technicallywrite.co.uk/img/tw-icon.jpg',
             description:
               'Technical documentation services for software teams creating complex products.',
-            email: 'colin@technicallywrite.co.uk',
+            email: 'info@technicallywrite.co.uk',
             identifier: {
               '@type': 'PropertyValue',
               propertyID: 'Company Registration Number',
