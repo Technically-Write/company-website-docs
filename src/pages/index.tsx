@@ -74,13 +74,19 @@ export default function Home(): ReactNode {
           '@context': 'https://schema.org',
           '@graph': [
             {
-              '@type': 'Organization',
-              '@id': 'https://www.technicallywrite.co.uk/#organization',
-              name: 'Technically Write Ltd.',
-              url: 'https://www.technicallywrite.co.uk/',
-              description:
-                'Technical documentation services for software teams creating complex products.',
-              email: 'colin@technicallywrite.co.uk',
+            '@type': 'Organization',
+            '@id': 'https://www.technicallywrite.co.uk/#organization',
+            name: 'Technically Write Ltd.',
+            legalName: 'Technically Write Ltd.',
+            url: 'https://www.technicallywrite.co.uk/',
+            description:
+              'Technical documentation services for software teams creating complex products.',
+            email: 'colin@technicallywrite.co.uk',
+            identifier: {
+              '@type': 'PropertyValue',
+              propertyID: 'Company Registration Number',
+              value: 'NI720408',
+            },
               sameAs: [
                 'https://www.linkedin.com/company/technically-write',
               ],
@@ -250,6 +256,10 @@ export default function Home(): ReactNode {
               name: 'Technically Write Ltd.',
               url: 'https://www.technicallywrite.co.uk/',
               publisher: {
+                '@id': 'https://www.technicallywrite.co.uk/#organization',
+              },
+              copyrightYear: 2026,
+              copyrightHolder: {
                 '@id': 'https://www.technicallywrite.co.uk/#organization',
               },
             },
