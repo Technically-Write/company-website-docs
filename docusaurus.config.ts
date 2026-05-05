@@ -102,7 +102,7 @@ const config: Config = {
       title: 'Home',
       logo: {
         alt: 'Technically Write Ltd. logo',
-        src: 'img/tw-icon.jpg',
+        src: 'img/tw-icon.png',
       },
       items: [
         {

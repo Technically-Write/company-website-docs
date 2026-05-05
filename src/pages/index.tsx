@@ -79,6 +79,7 @@ export default function Home(): ReactNode {
             name: 'Technically Write Ltd.',
             legalName: 'Technically Write Ltd.',
             url: 'https://www.technicallywrite.co.uk/',
+            logo: 'https://www.technicallywrite.co.uk/img/tw-icon.jpg',
             description:
               'Technical documentation services for software teams creating complex products.',
             email: 'colin@technicallywrite.co.uk',
