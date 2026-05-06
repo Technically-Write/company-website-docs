@@ -20,6 +20,13 @@ const config: Config = {
     rel: 'stylesheet',
   },
 ],
+  scripts: [
+    {
+      src: 'https://analytics.ahrefs.com/analytics.js',
+      async: true,
+      'data-key': 'qLbUJR8zACEEjacElQ/oEQ',
+    },
+  ],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -198,3 +205,4 @@ const config: Config = {
 };
 
 export default config;
+
