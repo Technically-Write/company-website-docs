@@ -20,11 +20,14 @@ const config: Config = {
     rel: 'stylesheet',
   },
 ],
-  scripts: [
+  headTags: [
     {
-      src: 'https://analytics.ahrefs.com/analytics.js',
-      async: true,
-      'data-key': 'qLbUJR8zACEEjacElQ/oEQ',
+      tagName: 'script',
+      attributes: {
+        src: 'https://analytics.ahrefs.com/analytics.js',
+        'data-key': 'qLbUJR8zACEEjacElQ/oEQ',
+        async: true,
+      },
     },
   ],
 
