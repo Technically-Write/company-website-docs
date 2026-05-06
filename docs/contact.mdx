@@ -1,8 +1,10 @@
 ---
 title: Contact Technically Write Ltd.
-description: 'Contact Technically Write Ltd. to book a consultation, request a free docs audit, or discuss technical documentation support for complex software products.'
+description: Contact Technically Write Ltd. to book a consultation, request a free documentation audit, or discuss technical documentation support for complex software products.
 displayed_sidebar: null
 hide_table_of_contents: true
+slug: /contact
+image: /img/annalong-1.png
 ---
 
 import Schema from '@site/src/components/Schema';
@@ -13,39 +15,45 @@ import Schema from '@site/src/components/Schema';
     '@graph': [
       {
         '@type': 'ContactPage',
-        '@id': 'https://www.technicallywrite.co.uk/docs/contact#contactpage',
+        '@id': 'https://www.technicallywrite.co.uk/contact#contactpage',
         name: 'Contact Technically Write Ltd.',
-        url: 'https://www.technicallywrite.co.uk/docs/contact',
+        url: 'https://www.technicallywrite.co.uk/contact',
         description:
-          'Book a consultation or request a free docs audit with Technically Write Ltd.',
+          'Book a consultation or request a free documentation audit with Technically Write Ltd.',
         isPartOf: {
           '@id': 'https://www.technicallywrite.co.uk/#website',
         },
+        publisher: {
+          '@id': 'https://www.technicallywrite.co.uk/#organization',
+        },
         about: [
           {
+            '@type': 'ProfessionalService',
             '@id': 'https://www.technicallywrite.co.uk/#professionalservice',
           },
           {
+            '@type': 'Service',
             '@id': 'https://www.technicallywrite.co.uk/technical-documentation-services#services',
           },
         ],
         mainEntity: {
-          '@id': 'https://www.technicallywrite.co.uk/docs/contact#contactpoint',
+          '@type': 'ContactPoint',
+          '@id': 'https://www.technicallywrite.co.uk/contact#contactpoint',
         },
         contentLocation: {
-          '@id': 'https://www.technicallywrite.co.uk/docs/contact#location',
+          '@id': 'https://www.technicallywrite.co.uk/contact#location',
         },
         primaryImageOfPage: {
-          '@id': 'https://www.technicallywrite.co.uk/docs/contact#annalong-image',
+          '@id': 'https://www.technicallywrite.co.uk/contact#annalong-image',
         },
       },
       {
         '@type': 'ContactPoint',
-        '@id': 'https://www.technicallywrite.co.uk/docs/contact#contactpoint',
+        '@id': 'https://www.technicallywrite.co.uk/contact#contactpoint',
         contactType: 'sales',
         email: 'info@technicallywrite.co.uk',
         telephone: '+447830392955',
-        availableLanguage: 'English',
+        availableLanguage: ['English'],
         areaServed: [
           'United Kingdom',
           'Ireland',
@@ -55,7 +63,7 @@ import Schema from '@site/src/components/Schema';
       },
       {
         '@type': 'Place',
-        '@id': 'https://www.technicallywrite.co.uk/docs/contact#location',
+        '@id': 'https://www.technicallywrite.co.uk/contact#location',
         name: 'Annalong',
         address: {
           '@type': 'PostalAddress',
@@ -66,17 +74,23 @@ import Schema from '@site/src/components/Schema';
       },
       {
         '@type': 'ImageObject',
-        '@id': 'https://www.technicallywrite.co.uk/docs/contact#annalong-image',
+        '@id': 'https://www.technicallywrite.co.uk/contact#annalong-image',
         name: 'Annalong, County Down, Northern Ireland',
         contentUrl: 'https://www.technicallywrite.co.uk/img/annalong-1.png',
         caption:
           'Technically Write Ltd. is based in Annalong, County Down, Northern Ireland.',
+        representativeOfPage: true,
       },
       {
         '@type': 'Offer',
-        '@id': 'https://www.technicallywrite.co.uk/docs/contact#consultation',
+        '@id': 'https://www.technicallywrite.co.uk/contact#consultation',
         name: 'Book a consultation',
-        url: 'https://www.technicallywrite.co.uk/docs/contact',
+        url: 'https://www.technicallywrite.co.uk/contact',
+        priceSpecification: {
+          '@type': 'PriceSpecification',
+          priceCurrency: 'GBP',
+          price: 'On request',
+        },
         itemOffered: {
           '@type': 'Service',
           name: 'Technical documentation consultation',
@@ -99,11 +113,14 @@ import Schema from '@site/src/components/Schema';
       },
       {
         '@type': 'Offer',
-        '@id': 'https://www.technicallywrite.co.uk/docs/contact#free-docs-audit',
-        name: 'Free Docs Audit',
-        url: 'https://www.technicallywrite.co.uk/docs/contact',
-        price: '0',
-        priceCurrency: 'GBP',
+        '@id': 'https://www.technicallywrite.co.uk/contact#free-docs-audit',
+        name: 'Free documentation audit',
+        url: 'https://www.technicallywrite.co.uk/contact',
+        priceSpecification: {
+          '@type': 'PriceSpecification',
+          priceCurrency: 'GBP',
+          price: '0',
+        },
         itemOffered: {
           '@type': 'Service',
           name: 'Free documentation audit',
@@ -126,7 +143,7 @@ import Schema from '@site/src/components/Schema';
       },
       {
         '@type': 'BreadcrumbList',
-        '@id': 'https://www.technicallywrite.co.uk/docs/contact#breadcrumb',
+        '@id': 'https://www.technicallywrite.co.uk/contact#breadcrumb',
         itemListElement: [
           {
             '@type': 'ListItem',
@@ -137,8 +154,8 @@ import Schema from '@site/src/components/Schema';
           {
             '@type': 'ListItem',
             position: 2,
-            name: 'Contact',
-            item: 'https://www.technicallywrite.co.uk/docs/contact',
+            name: 'Contact Technically Write Ltd.',
+            item: 'https://www.technicallywrite.co.uk/contact',
           },
         ],
       },
@@ -146,24 +163,27 @@ import Schema from '@site/src/components/Schema';
   }}
 />
 
-# Get in touch
+# Contact Technically Write Ltd.
+
+Contact Technically Write Ltd. to discuss technical documentation, API documentation, developer documentation, or documentation strategy support for your software product.
 
 <div className="twTwoCol">
   <div className="twTwoColLeft">
 
-
 Thanks for your interest in Technically Write Ltd. We’d love to hear from you. If you have a question or want to discuss an upcoming project, let us know.
 
-At Technically Write Ltd., we deliver high-quality content and UX solutions built around your business goals. Whether you want to refresh your in-product branding, improve internal or external documentation, elevate the overall look and feel of your content, or migrate to a new documentation tool, we’re here to make it happen.
+At Technically Write Ltd., we deliver high-quality technical documentation and UX writing solutions built around your business goals. Whether you want to improve API documentation, developer documentation, internal knowledge bases, or user-facing content, we can help.
 
-We’re based in Annalong, County Down, Northern Ireland, which is conveniently located between Belfast and Dublin. We can support clients across Northern Ireland, Ireland, and the wider UK. We work remotely as standard for most engagements, but can accommodate on-site meetings when required.
+We’re based in Annalong, County Down, Northern Ireland, conveniently located between Belfast and Dublin. We support clients across the UK, Ireland, Europe, and the United States, working remotely as standard while accommodating on-site engagement when required.
+
+See our [technical documentation services](/technical-documentation-services) or view our [technical documentation pricing](/technical-writing-pricing).
+
 <br />
 
 <div className="twContactPage">
   <div className="twContactMethods">
     <a className="twContactItem" href="tel:+447830392955">
       <span className="twIcon" aria-hidden="true">
-        {/* Phone */}
         <svg viewBox="0 0 24 24" className="twSvg" focusable="false" aria-hidden="true">
           <circle className="twIconBg" cx="12" cy="12" r="11" />
           <path
@@ -177,7 +197,6 @@ We’re based in Annalong, County Down, Northern Ireland, which is conveniently 
 
     <a className="twContactItem" href="mailto:info@technicallywrite.co.uk">
       <span className="twIcon" aria-hidden="true">
-        {/* Email */}
         <svg viewBox="0 0 24 24" className="twSvg" focusable="false" aria-hidden="true">
           <circle className="twIconBg" cx="12" cy="12" r="11" />
           <path
@@ -196,7 +215,6 @@ We’re based in Annalong, County Down, Northern Ireland, which is conveniently 
       rel="noopener noreferrer"
     >
       <span className="twIcon" aria-hidden="true">
-        {/* LinkedIn */}
         <svg viewBox="0 0 24 24" className="twSvg" focusable="false" aria-hidden="true">
           <circle className="twIconBg" cx="12" cy="12" r="11" />
           <path
@@ -208,21 +226,27 @@ We’re based in Annalong, County Down, Northern Ireland, which is conveniently 
       <span>LinkedIn</span>
     </a>
   </div>
+
   <div className="twTwoColRight">
-    <img className="twContactImage" src="/img/annalong-1.png" alt="View of Annalong, County Down, Northern Ireland" width="100%" />
+    <img
+      className="twContactImage"
+      src="/img/annalong-1.png"
+      alt="View of Annalong, County Down, Northern Ireland"
+      width="100%"
+    />
   </div>
 </div>
 
   </div>
 
   <div className="twJotformWrap">
-  <iframe
-    className="twJotformFrame"
-    src="https://form.jotform.com/260377294603056"
-    title="Contact form"
-    loading="lazy"
-    scrolling="no"
-    frameBorder="0"
-  ></iframe>
-</div>
+    <iframe
+      className="twJotformFrame"
+      src="https://form.jotform.com/260377294603056"
+      title="Contact form"
+      loading="lazy"
+      scrolling="no"
+      frameBorder="0"
+    ></iframe>
+  </div>
 </div>
