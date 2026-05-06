@@ -1,6 +1,98 @@
 ---
+title: Technical Documentation Pricing
+description: Learn how Technically Write Ltd. prices technical documentation, documentation audits, project-based work, hourly support, and retainer-style documentation services.
 displayed_sidebar: null
+hide_table_of_contents: true
 ---
+
+import Schema from '@site/src/components/Schema';
+
+<Schema
+  data={{
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        '@id': 'https://www.technicallywrite.co.uk/docs/prices#webpage',
+        name: 'Technical Documentation Prices',
+        url: 'https://www.technicallywrite.co.uk/docs/prices',
+        description:
+          'Pricing information for technical documentation, documentation audits, technical writing, and documentation strategy services from Technically Write Ltd.',
+        isPartOf: {
+          '@id': 'https://www.technicallywrite.co.uk/#website',
+        },
+        about: {
+          '@id': 'https://www.technicallywrite.co.uk/docs/services#services',
+        },
+      },
+      {
+        '@type': 'OfferCatalog',
+        '@id': 'https://www.technicallywrite.co.uk/docs/prices#pricing',
+        name: 'Technical documentation pricing',
+        url: 'https://www.technicallywrite.co.uk/docs/prices',
+        provider: {
+          '@id': 'https://www.technicallywrite.co.uk/#organization',
+        },
+        itemListElement: [
+          {
+            '@type': 'Offer',
+            name: 'Technical documentation services',
+            url: 'https://www.technicallywrite.co.uk/docs/prices',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Technical documentation',
+              provider: {
+                '@id': 'https://www.technicallywrite.co.uk/#organization',
+              },
+            },
+          },
+          {
+            '@type': 'Offer',
+            name: 'Documentation audit',
+            url: 'https://www.technicallywrite.co.uk/docs/prices',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Documentation audit',
+              provider: {
+                '@id': 'https://www.technicallywrite.co.uk/#organization',
+              },
+            },
+          },
+          {
+            '@type': 'Offer',
+            name: 'Documentation strategy',
+            url: 'https://www.technicallywrite.co.uk/docs/prices',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Documentation strategy',
+              provider: {
+                '@id': 'https://www.technicallywrite.co.uk/#organization',
+              },
+            },
+          },
+        ],
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': 'https://www.technicallywrite.co.uk/docs/prices#breadcrumb',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://www.technicallywrite.co.uk/',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Prices',
+            item: 'https://www.technicallywrite.co.uk/docs/prices',
+          },
+        ],
+      },
+    ],
+  }}
+/>
 
 # Pricing
 
@@ -9,7 +101,7 @@ Every product, team, and documentation estate is different. For that reason, we 
 ## Flexible engagement models
 
 :::note
-We never quote or enage on a per-word-rate basis. Great documentation can never be judged by the word count, because it takes comparitively little time to generate an entire section of waffle, but sometimes many hours to generate a single critical page of quality content.
+We never quote or engage on a per-word-rate basis. Great documentation can never be judged by the word count, because it takes comparatively little time to generate an entire section of waffle, but sometimes many hours to generate a single critical page of quality content.
 :::
 
 * **Hourly Support** – ideal for short, contained tasks, audits, rewrites, quick wins, or perhaps smaller 'grey' projects where it is difficult to predict the effort required.
@@ -20,9 +112,9 @@ We never quote or enage on a per-word-rate basis. Great documentation can never 
 
 ## The right expertise at the right time
 
-Instead of hiring a single writer with one set of strengths, we can blend the skills of multiple writers into one solution and flex as your needs change. For example, we might establish documentation pipelines and team processes upfront, then transitioning to long-term delivery with an embedded writer, perhaps with some light steering from a technical writing manager. This approach helps you get senior-level capability when it matters most, without carrying long-term overhead.
+Instead of hiring a single writer with one set of strengths, we can blend the skills of multiple writers into one solution and flex as your needs change. For example, we might establish documentation pipelines and team processes upfront, then transition to long-term delivery with an embedded writer, perhaps with some light steering from a technical writing manager. This approach helps you get senior-level capability when it matters most, without carrying long-term overhead.
 
-## Planning upcoming Work?
+## Planning upcoming work?
 
 Many organisations are increasingly using contract and resourcing models to reduce risk while still accessing experienced delivery. If you need capable hands quickly, or want to scope work before committing, let’s talk.
 
