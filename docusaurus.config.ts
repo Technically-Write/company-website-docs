@@ -8,6 +8,7 @@ const config: Config = {
   title: 'Technically Write Ltd.',
   tagline: 'Technical documentation that reduces support tickets and drives product adoption.',
   favicon: 'img/favicon.ico',
+  clientModules: [require.resolve('./src/clientModules/ahrefs.ts')],
   customFields: {
     heroDescription:
       'For complex products that need structured, user-focused documentation.',
@@ -20,16 +21,6 @@ const config: Config = {
     rel: 'stylesheet',
   },
 ],
-  headTags: [
-    {
-      tagName: 'script',
-      attributes: {
-        src: 'https://analytics.ahrefs.com/analytics.js',
-        'data-key': 'qLbUJR8zACEEjacElQ/oEQ',
-        async: true,
-      },
-    },
-  ],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
