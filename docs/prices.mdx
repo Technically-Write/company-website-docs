@@ -1,8 +1,10 @@
 ---
 title: Technical Documentation Pricing
-description: Learn how Technically Write Ltd. prices technical documentation, documentation audits, project-based work, hourly support, and retainer-style documentation services.
+description: Technical documentation pricing for SaaS companies, including project-based work, hourly technical writing, documentation audits, and retainer services.
 displayed_sidebar: null
 hide_table_of_contents: true
+slug: /technical-writing-pricing
+image: /img/technical-writing-pricing.png
 ---
 
 import Schema from '@site/src/components/Schema';
@@ -13,23 +15,28 @@ import Schema from '@site/src/components/Schema';
     '@graph': [
       {
         '@type': 'WebPage',
-        '@id': 'https://www.technicallywrite.co.uk/docs/prices#webpage',
-        name: 'Technical Documentation Prices',
-        url: 'https://www.technicallywrite.co.uk/docs/prices',
+        '@id': 'https://www.technicallywrite.co.uk/technical-writing-pricing#webpage',
+        name: 'Technical Documentation Pricing',
+        url: 'https://www.technicallywrite.co.uk/technical-writing-pricing',
         description:
           'Pricing information for technical documentation, documentation audits, technical writing, and documentation strategy services from Technically Write Ltd.',
         isPartOf: {
           '@id': 'https://www.technicallywrite.co.uk/#website',
         },
+        publisher: {
+          '@id': 'https://www.technicallywrite.co.uk/#organization',
+        },
         about: {
+          '@type': 'Service',
           '@id': 'https://www.technicallywrite.co.uk/docs/services#services',
         },
       },
       {
         '@type': 'OfferCatalog',
-        '@id': 'https://www.technicallywrite.co.uk/docs/prices#pricing',
+        '@id': 'https://www.technicallywrite.co.uk/technical-writing-pricing#pricing',
         name: 'Technical documentation pricing',
-        url: 'https://www.technicallywrite.co.uk/docs/prices',
+        description: 'Pricing models for technical documentation services including hourly, project-based, and retainer engagements.',
+        url: 'https://www.technicallywrite.co.uk/technical-writing-pricing',
         provider: {
           '@id': 'https://www.technicallywrite.co.uk/#organization',
         },
@@ -37,7 +44,16 @@ import Schema from '@site/src/components/Schema';
           {
             '@type': 'Offer',
             name: 'Technical documentation services',
-            url: 'https://www.technicallywrite.co.uk/docs/prices',
+            url: 'https://www.technicallywrite.co.uk/technical-writing-pricing',
+            mainEntityOfPage: {
+              '@id': 'https://www.technicallywrite.co.uk/technical-writing-pricing#webpage',
+            },
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              priceCurrency: 'GBP',
+              price: 'On request',
+            },
+            availability: 'https://schema.org/InStock',
             itemOffered: {
               '@type': 'Service',
               name: 'Technical documentation',
@@ -49,7 +65,16 @@ import Schema from '@site/src/components/Schema';
           {
             '@type': 'Offer',
             name: 'Documentation audit',
-            url: 'https://www.technicallywrite.co.uk/docs/prices',
+            url: 'https://www.technicallywrite.co.uk/technical-writing-pricing',
+            mainEntityOfPage: {
+              '@id': 'https://www.technicallywrite.co.uk/technical-writing-pricing#webpage',
+            },
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              priceCurrency: 'GBP',
+              price: 'On request',
+            },
+            availability: 'https://schema.org/InStock',
             itemOffered: {
               '@type': 'Service',
               name: 'Documentation audit',
@@ -61,7 +86,16 @@ import Schema from '@site/src/components/Schema';
           {
             '@type': 'Offer',
             name: 'Documentation strategy',
-            url: 'https://www.technicallywrite.co.uk/docs/prices',
+            url: 'https://www.technicallywrite.co.uk/technical-writing-pricing',
+            mainEntityOfPage: {
+              '@id': 'https://www.technicallywrite.co.uk/technical-writing-pricing#webpage',
+            },
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              priceCurrency: 'GBP',
+              price: 'On request',
+            },
+            availability: 'https://schema.org/InStock',
             itemOffered: {
               '@type': 'Service',
               name: 'Documentation strategy',
@@ -74,7 +108,7 @@ import Schema from '@site/src/components/Schema';
       },
       {
         '@type': 'BreadcrumbList',
-        '@id': 'https://www.technicallywrite.co.uk/docs/prices#breadcrumb',
+        '@id': 'https://www.technicallywrite.co.uk/technical-writing-pricing#breadcrumb',
         itemListElement: [
           {
             '@type': 'ListItem',
@@ -85,8 +119,8 @@ import Schema from '@site/src/components/Schema';
           {
             '@type': 'ListItem',
             position: 2,
-            name: 'Prices',
-            item: 'https://www.technicallywrite.co.uk/docs/prices',
+            name: 'Technical Documentation Pricing',
+            item: 'https://www.technicallywrite.co.uk/technical-writing-pricing',
           },
         ],
       },
@@ -94,9 +128,13 @@ import Schema from '@site/src/components/Schema';
   }}
 />
 
-# Pricing
+# Technical Documentation Pricing
 
-Every product, team, and documentation estate is different. For that reason, we quote based on scope, timelines, and the outcomes you need. We keep things simple and transparent, and we’re happy to work in the way that best suits your organisation: keen hourly rates for clearly defined tasks, fixed pricing per project, or retainer-style support for ongoing delivery.
+Technical documentation pricing varies depending on scope, complexity, and delivery model. At Technically Write Ltd., we offer flexible pricing for API documentation, user guides, developer documentation, documentation audits, and documentation strategy services.
+
+Every product, team, and documentation estate is different. For that reason, our technical documentation pricing depends on scope, timelines, product complexity, and the outcomes you need. We support SaaS documentation, API documentation, developer documentation, user guides, documentation audits, and ongoing technical writing support through simple, transparent engagement models.
+
+For more detail about what we deliver, see our [technical documentation services](/docs/services).
 
 ## Flexible engagement models
 
@@ -118,7 +156,7 @@ Instead of hiring a single writer with one set of strengths, we can blend the sk
 
 Many organisations are increasingly using contract and resourcing models to reduce risk while still accessing experienced delivery. If you need capable hands quickly, or want to scope work before committing, let’s talk.
 
-with a short description of what you’re building, what your documentation need is (internal guides, external guides, API documentation, release notes, etc.) your timeline, and any existing or desired tooling. Then we’ll come back promptly with the most suitable approach and prices.
+If you’re planning upcoming work, get in touch with a short description of what you’re building, what your documentation need is (internal guides, external guides, API documentation, release notes, etc.), your timeline, and any existing or desired tooling. Then we’ll come back promptly with the most suitable approach and prices.
 
 
 ## How much will it cost?
@@ -135,3 +173,5 @@ When engaging with us, it is worthwhile noting that there are many variables tha
 * Do you have any customer research available?
 
 Once we have an idea on the above variables, we can work out a competitive quotation for the work that you require.
+
+[Contact Technically Write](/contact) to discuss your documentation requirements.
