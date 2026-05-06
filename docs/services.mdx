@@ -3,6 +3,8 @@ displayed_sidebar: null
 hide_table_of_contents: true
 title: Technical Documentation Services
 description: Technical documentation services for software teams that need structured, scalable, user-focused documentation.
+slug: /technical-documentation-services
+image: /img/technical-documentation-services.png
 ---
 
 import Schema from '@site/src/components/Schema';
@@ -13,24 +15,28 @@ import Schema from '@site/src/components/Schema';
     '@graph': [
       {
         '@type': 'WebPage',
-        '@id': 'https://www.technicallywrite.co.uk/docs/services#webpage',
+        '@id': 'https://www.technicallywrite.co.uk/technical-documentation-services#webpage',
         name: 'Technical Documentation Services',
-        url: 'https://www.technicallywrite.co.uk/docs/services',
+        url: 'https://www.technicallywrite.co.uk/technical-documentation-services',
         logo: 'https://www.technicallywrite.co.uk/img/tw-icon.jpg',
         description:
           'Technical documentation services for software teams that need structured, scalable, user-focused documentation.',
         isPartOf: {
           '@id': 'https://www.technicallywrite.co.uk/#website',
         },
+        publisher: {
+          '@id': 'https://www.technicallywrite.co.uk/#organization',
+        },
         about: {
-          '@id': 'https://www.technicallywrite.co.uk/docs/services#services',
+          '@type': 'Service',
+          '@id': 'https://www.technicallywrite.co.uk/technical-documentation-services#services',
         },
       },
       {
         '@type': 'Service',
-        '@id': 'https://www.technicallywrite.co.uk/docs/services#services',
+        '@id': 'https://www.technicallywrite.co.uk/technical-documentation-services#services',
         name: 'Technical Documentation Services',
-        url: 'https://www.technicallywrite.co.uk/docs/services',
+        url: 'https://www.technicallywrite.co.uk/technical-documentation-services',
         description:
           'Structured, scalable, user-focused technical documentation for software teams creating complex products.',
         provider: {
@@ -141,7 +147,7 @@ import Schema from '@site/src/components/Schema';
       },
       {
         '@type': 'BreadcrumbList',
-        '@id': 'https://www.technicallywrite.co.uk/docs/services#breadcrumb',
+        '@id': 'https://www.technicallywrite.co.uk/technical-documentation-services#breadcrumb',
         itemListElement: [
           {
             '@type': 'ListItem',
@@ -153,7 +159,7 @@ import Schema from '@site/src/components/Schema';
             '@type': 'ListItem',
             position: 2,
             name: 'Services',
-            item: 'https://www.technicallywrite.co.uk/docs/services',
+            item: 'https://www.technicallywrite.co.uk/technical-documentation-services',
           },
         ],
       },
