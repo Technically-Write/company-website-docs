@@ -1,25 +1,9 @@
 chillis:
   name: Dr Colin Hillis, FISTC
-  title: Technical Writing Consultant, Founder of Technically Write Ltd.
-  url: https://www.linkedin.com/in/colinh1/
-  image_url: /img/tw-icon.jpg
+  title: Founder and Director, Technically Write Ltd.
+  url: https://www.technicallywrite.co.uk/about
+  image_url: /img/profile-pic.jpg
   page: true
   socials:
     linkedin: colinh1
-    #github: yangshun
     website: https://www.technicallywrite.co.uk
-
-
-#slorber:
-  #name: Sébastien Lorber
-  #title: Docusaurus maintainer
-  #url: https://sebastienlorber.com
-  #image_url: https://github.com/slorber.png
-  #page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    #permalink: '/all-sebastien-lorber-articles'
-  #socials:
-    #x: sebastienlorber
-    #linkedin: sebastienlorber
-    #github: slorber
-    #newsletter: https://thisweekinreact.com

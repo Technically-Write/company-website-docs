@@ -1,19 +1,54 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+technical-documentation:
+  label: Technical Documentation
+  permalink: /technical-documentation
+  description: Technical documentation practices, quality, and delivery for software products.
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+documentation-strategy:
+  label: Documentation Strategy
+  permalink: /documentation-strategy
+  description: Planning, governance, tooling, and scaling documentation teams and processes.
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+api-documentation:
+  label: API Documentation
+  permalink: /api-documentation
+  description: API reference, developer experience, and developer documentation practices.
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+developer-documentation:
+  label: Developer Documentation
+  permalink: /developer-documentation
+  description: Documentation that supports developers integrating and building with products.
+
+ux-writing:
+  label: UX Writing
+  permalink: /ux-writing
+  description: UX writing, content design, and improving product usability through language.
+
+ai-in-documentation:
+  label: AI in Documentation
+  permalink: /ai-documentation
+  description: The role of AI in technical documentation, content generation, and workflows.
+
+docs-as-code:
+  label: Docs-as-Code
+  permalink: /docs-as-code
+  description: Documentation workflows using version control, pipelines, and developer tooling.
+
+content-quality:
+  label: Documentation Quality
+  permalink: /documentation-quality
+  description: Improving clarity, structure, and effectiveness of documentation.
+
+business-updates:
+  label: Business Updates
+  permalink: /business-updates
+  description: Company news, milestones, and updates from Technically Write Ltd.
+
+community:
+  label: Community & Sponsorship
+  permalink: /community
+  description: Sponsorships, charity work, and community involvement.
+
+documentation-roi:
+  label: Documentation ROI
+  permalink: /documentation-roi
+  description: How documentation impacts support costs, product adoption, and business outcomes.
