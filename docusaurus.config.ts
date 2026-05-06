@@ -10,7 +10,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
   customFields: {
     heroDescription:
-      'For software teams creating complex products that need structured, scalable, user-focused documentation.',
+      'For complex products that need structured, user-focused documentation.',
   },
 
   stylesheets: [

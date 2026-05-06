@@ -18,11 +18,10 @@ function HomepageHeader() {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.5; // 50% speed
+      videoRef.current.playbackRate = 0.5;
     }
   }, []);
 
-  // Hero background video
   const HERO_VIDEO_URL =
     'https://pub-44e9e263590e407f94e738c0c0b2a7be.r2.dev/hero-bg.mp4';
 
@@ -44,10 +43,12 @@ function HomepageHeader() {
 
       <div className={clsx('container', styles.heroContent)}>
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          Welcome to Technically Write Ltd.
         </Heading>
 
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          Reducing dependency on support teams by driving product adoption with clear, scalable documentation.
+        </p>
 
         <p className="hero__description">{heroDescription}</p>
 
@@ -62,32 +63,30 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
-
   return (
     <Layout
-      title="Technically Write Ltd. | Technical Documentation for Software Teams"
-      description="Technical documentation services for software teams creating complex products. Reduce support tickets and drive product adoption with structured, scalable documentation."
+      title="Welcome to Technically Write Ltd."
+      description="Technical documentation services for software, SaaS, and high-trust product teams. Improve API documentation, developer documentation, user guides, and product adoption."
     >
       <Schema
         data={{
           '@context': 'https://schema.org',
           '@graph': [
             {
-            '@type': 'Organization',
-            '@id': 'https://www.technicallywrite.co.uk/#organization',
-            name: 'Technically Write Ltd.',
-            legalName: 'Technically Write Ltd.',
-            url: 'https://www.technicallywrite.co.uk/',
-            logo: 'https://www.technicallywrite.co.uk/img/tw-icon.jpg',
-            description:
-              'Technical documentation services for software teams creating complex products.',
-            email: 'info@technicallywrite.co.uk',
-            identifier: {
-              '@type': 'PropertyValue',
-              propertyID: 'Company Registration Number',
-              value: 'NI720408',
-            },
+              '@type': 'Organization',
+              '@id': 'https://www.technicallywrite.co.uk/#organization',
+              name: 'Technically Write Ltd.',
+              legalName: 'Technically Write Ltd.',
+              url: 'https://www.technicallywrite.co.uk/',
+              logo: 'https://www.technicallywrite.co.uk/img/tw-icon.jpg',
+              description:
+                'Technical documentation services for software, SaaS, aerospace, and high-trust product teams.',
+              email: 'info@technicallywrite.co.uk',
+              identifier: {
+                '@type': 'PropertyValue',
+                propertyID: 'Company Registration Number',
+                value: 'NI720408',
+              },
               sameAs: [
                 'https://www.linkedin.com/company/technically-write',
               ],
@@ -135,120 +134,9 @@ export default function Home(): ReactNode {
               hasOfferCatalog: {
                 '@type': 'OfferCatalog',
                 name: 'Technical documentation services',
-                itemListElement: [
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Technical documentation',
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Technical writing',
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Software documentation',
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'SaaS documentation',
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'API documentation',
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Developer documentation',
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Product documentation',
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'User guides',
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Startup support',
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Aerospace documentation',
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Knowledge base documentation',
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Documentation audits',
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Documentation strategy',
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Information architecture',
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Release notes',
-                    },
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Technical editing',
-                    },
-                  },
-                ],
+                description:
+                  'Technical documentation services including API documentation, developer documentation, user guides, documentation audits, documentation strategy, and release notes.',
+                url: 'https://www.technicallywrite.co.uk/technical-documentation-services',
               },
             },
             {
@@ -267,15 +155,22 @@ export default function Home(): ReactNode {
             {
               '@type': 'WebPage',
               '@id': 'https://www.technicallywrite.co.uk/#webpage',
-              name:
-                'Technical Documentation for Software Teams',
+              name: 'Technical Documentation Services for Software Teams',
               url: 'https://www.technicallywrite.co.uk/',
               description:
-                'Technical documentation services for software teams creating complex products. Reduce support tickets and drive product adoption with structured, scalable documentation.',
+                'Technical documentation services for software, SaaS, and high-trust product teams. Improve API documentation, developer documentation, user guides, and product adoption.',
               isPartOf: {
                 '@id': 'https://www.technicallywrite.co.uk/#website',
               },
+              publisher: {
+                '@id': 'https://www.technicallywrite.co.uk/#organization',
+              },
               about: {
+                '@type': 'ProfessionalService',
+                '@id': 'https://www.technicallywrite.co.uk/#professionalservice',
+              },
+              mainEntity: {
+                '@type': 'ProfessionalService',
                 '@id': 'https://www.technicallywrite.co.uk/#professionalservice',
               },
               potentialAction: [
@@ -286,7 +181,7 @@ export default function Home(): ReactNode {
                 },
                 {
                   '@type': 'ContactAction',
-                  name: 'Get a free docs audit',
+                  name: 'Request a free documentation audit',
                   target: 'https://www.technicallywrite.co.uk/contact',
                 },
               ],

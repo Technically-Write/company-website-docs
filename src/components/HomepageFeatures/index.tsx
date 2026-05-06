@@ -9,43 +9,44 @@ type FeatureItem = {
   title: string;
   to: string;
   Svg?: React.ComponentType<React.ComponentProps<'svg'>>;
-  Img?: string; // path under /static
+  Img?: string;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'What do our customers say?',
+    title: 'Read customer feedback',
     to: '/customer-feedback',
     Img: 'img/customer-reviews.png',
     description: (
       <>
-        A snapshot of what it’s like to work with us. These testimonials reflect
-        the quality, pace, and care we bring to every documentation project, and
-        the impact on clarity and customer success.
+        See what clients say about working with Technically Write Ltd. across
+        technical documentation, UX writing, delivery pace, quality, and support
+        for complex software products.
       </>
     ),
   },
   {
-    title: 'Book a consultation',
+    title: 'Book a documentation consultation',
     to: '/contact',
     Img: 'img/consultation.png',
     description: (
       <>
-        Tell us your documentation and UX goals. We’ll recommend a tailored
-        strategy to improve clarity, consistency, and customer adoption.
+        Discuss your technical documentation, API documentation, developer
+        documentation, or UX writing needs. We’ll help you identify the right
+        approach for your product and team.
       </>
     ),
   },
   {
-    title: 'Get a free docs audit',
-    to: '/dcontact',
+    title: 'Request a free documentation audit',
+    to: '/contact',
     Img: 'https://pub-44e9e263590e407f94e738c0c0b2a7be.r2.dev/free-review.png',
     description: (
       <>
-        Request a free documentation review to see how we can improve clarity
-        and guide users better. We’ll highlight what’s working, what needs
-        attention, and the next steps to fix it.
+        Get a free review of your documentation. We’ll highlight gaps,
+        usability issues, structure problems, and practical next steps to make
+        your content clearer and more effective.
       </>
     ),
   },
@@ -56,19 +57,13 @@ function Feature({title, to, Svg, Img, description}: FeatureItem) {
 
   return (
     <div className={clsx('col col--4', styles.featureCol)}>
-      {/* This wrapper constrains BOTH image + text to the same width */}
       <div className={styles.featureInner}>
         <div className="text--center">
-          <Link
-            to={to}
-            aria-label={title}
-            className={styles.featureLink}
-            /* removed inline display/lineHeight so CSS controls layout */
-          >
+          <Link to={to} aria-label={title} className={styles.featureLink}>
             {Svg ? (
               <Svg className={styles.featureSvg} role="img" />
             ) : Img ? (
-              <img className={styles.featureImg} src={imgUrl} alt={title} />
+              <img className={styles.featureImg} src={imgUrl} alt="" />
             ) : null}
           </Link>
         </div>
@@ -91,8 +86,8 @@ export default function HomepageFeatures(): ReactNode {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {FeatureList.map((props) => (
+            <Feature key={props.title} {...props} />
           ))}
         </div>
       </div>
