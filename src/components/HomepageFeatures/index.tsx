@@ -16,7 +16,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'What do our customers say?',
-    to: '/docs/customer-feedback',
+    to: '/customer-feedback',
     Img: 'img/customer-reviews.png',
     description: (
       <>
@@ -28,7 +28,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Book a consultation',
-    to: '/docs/contact',
+    to: '/contact',
     Img: 'img/consultation.png',
     description: (
       <>
@@ -39,7 +39,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Get a free docs audit',
-    to: '/docs/contact',
+    to: '/dcontact',
     Img: 'https://pub-44e9e263590e407f94e738c0c0b2a7be.r2.dev/free-review.png',
     description: (
       <>

@@ -52,7 +52,7 @@ function HomepageHeader() {
         <p className="hero__description">{heroDescription}</p>
 
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs/contact">
+          <Link className="button button--secondary button--lg" to="/contact">
             Book a consultation
           </Link>
         </div>
@@ -282,12 +282,12 @@ export default function Home(): ReactNode {
                 {
                   '@type': 'ContactAction',
                   name: 'Book a consultation',
-                  target: 'https://www.technicallywrite.co.uk/docs/contact',
+                  target: 'https://www.technicallywrite.co.uk/contact',
                 },
                 {
                   '@type': 'ContactAction',
                   name: 'Get a free docs audit',
-                  target: 'https://www.technicallywrite.co.uk/docs/contact',
+                  target: 'https://www.technicallywrite.co.uk/contact',
                 },
               ],
             },
