@@ -75,9 +75,7 @@ const config: Config = {
         onInlineTags: 'warn',
         onInlineAuthors: 'warn',
         onUntruncatedBlogPosts: 'warn',
-          // 👇 ADDED THIS TO UN-INDEX AUTHORS AND TAGS
         archiveBasePath: null,
-        tagsBasePath: 'tags',
         authorsBasePath: null,
         // editUrl:
         //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -210,4 +208,3 @@ const config: Config = {
 };
 
 export default config;
-
