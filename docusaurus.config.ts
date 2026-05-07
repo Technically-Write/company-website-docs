@@ -79,7 +79,6 @@ const config: Config = {
         archiveBasePath: null,
         tagsBasePath: 'tags',
         authorsBasePath: null,
-},
         // editUrl:
         //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
       },
