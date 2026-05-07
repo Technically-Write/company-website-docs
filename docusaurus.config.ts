@@ -73,6 +73,7 @@ const config: Config = {
       docs: {
         routeBasePath: '/',
         sidebarPath: './sidebars.ts',
+        exclude: ['**/_*.md', '**/_*.mdx'],
         // editUrl:
         //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
       },
@@ -82,7 +83,8 @@ const config: Config = {
         blogTitle: 'Technical Writing Blog',
         blogDescription:
           'Insights from Technically Write Ltd. on technical documentation, documentation strategy, AI, Docs-as-Code, and content quality.',
-        feedOptions: {
+        exclude: ['**/_*.md', '**/_*.mdx'],
+          feedOptions: {
           type: ['rss', 'atom'],
           xslt: true,
         },
