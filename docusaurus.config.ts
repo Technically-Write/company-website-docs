@@ -68,6 +68,9 @@ const config: Config = {
       blog: {
         showReadingTime: true,
         blogSidebarCount: 'ALL',
+        blogTitle: 'Technical Writing Blog',
+        blogDescription:
+          'Insights from Technically Write Ltd. on technical documentation, documentation strategy, AI, Docs-as-Code, and content quality.',
         feedOptions: {
           type: ['rss', 'atom'],
           xslt: true,
