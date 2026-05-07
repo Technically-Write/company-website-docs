@@ -31,7 +31,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'Book a documentation consultation',
     to: '/contact/',
-    Img: 'img/consultation.png',
+    Img: 'img/consultation.jpg',
     alt: 'Documentation consultation for technical writing and API documentation support',
     description: (
       <>

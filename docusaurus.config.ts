@@ -27,6 +27,17 @@ const config: Config = {
       'data-key': 'qLbUJR8zACEEjacElQ/oEQ',
     },
   ],
+    headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:type',
+        content: 'website',
+      },
+    },
+  ],
+
+  
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -115,7 +126,7 @@ const config: Config = {
       title: 'Home',
       logo: {
         alt: 'Technically Write Ltd. logo',
-        src: 'img/tw-icon.png',
+        src: 'img/tw-icon.jpg',
       },
       items: [
         {
