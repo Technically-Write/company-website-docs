@@ -38,6 +38,7 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+  trailingSlash: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -143,7 +144,7 @@ const config: Config = {
           position: 'left',
           label: 'Contact',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog/', label: 'Blog', position: 'left'},
         //{
           //href: 'https://github.com/facebook/docusaurus',
           //label: 'GitHubs',
@@ -185,7 +186,7 @@ const config: Config = {
           items: [
             {
               label: 'Blog',
-              to: '/blog',
+              to: '/blog/',
             },
             {
               label: 'GitHub',

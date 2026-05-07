@@ -53,7 +53,7 @@ function HomepageHeader() {
         <p className="hero__description">{heroDescription}</p>
 
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/contact">
+          <Link className="button button--secondary button--lg" to="/contact/">
             Book a consultation
           </Link>
         </div>
@@ -136,7 +136,7 @@ export default function Home(): ReactNode {
                 name: 'Technical documentation services',
                 description:
                   'Technical documentation services including API documentation, developer documentation, user guides, documentation audits, documentation strategy, and release notes.',
-                url: 'https://www.technicallywrite.co.uk/technical-documentation-services',
+                url: 'https://www.technicallywrite.co.uk/technical-documentation-services/',
               },
             },
             {
@@ -177,12 +177,12 @@ export default function Home(): ReactNode {
                 {
                   '@type': 'ContactAction',
                   name: 'Book a consultation',
-                  target: 'https://www.technicallywrite.co.uk/contact',
+                  target: 'https://www.technicallywrite.co.uk/contact/',
                 },
                 {
                   '@type': 'ContactAction',
                   name: 'Request a free documentation audit',
-                  target: 'https://www.technicallywrite.co.uk/contact',
+                  target: 'https://www.technicallywrite.co.uk/contact/',
                 },
               ],
             },
