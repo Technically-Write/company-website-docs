@@ -10,6 +10,7 @@ type FeatureItem = {
   to: string;
   Svg?: React.ComponentType<React.ComponentProps<'svg'>>;
   Img?: string;
+  alt?: string;
   description: ReactNode;
 };
 
@@ -18,6 +19,7 @@ const FeatureList: FeatureItem[] = [
     title: 'Read customer feedback',
     to: '/customer-feedback/',
     Img: 'img/customer-reviews.png',
+    alt: 'Client feedback for Technically Write Ltd. technical documentation services',
     description: (
       <>
         See what clients say about working with Technically Write Ltd. across
@@ -30,6 +32,7 @@ const FeatureList: FeatureItem[] = [
     title: 'Book a documentation consultation',
     to: '/contact/',
     Img: 'img/consultation.png',
+    alt: 'Documentation consultation for technical writing and API documentation support',
     description: (
       <>
         Discuss your technical documentation, API documentation, developer
@@ -42,6 +45,7 @@ const FeatureList: FeatureItem[] = [
     title: 'Request a free documentation audit',
     to: '/contact/',
     Img: 'https://pub-44e9e263590e407f94e738c0c0b2a7be.r2.dev/free-review.png',
+    alt: 'Free documentation audit offer from Technically Write Ltd.',
     description: (
       <>
         Get a free review of your documentation. We’ll highlight gaps,
@@ -52,7 +56,7 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, to, Svg, Img, description}: FeatureItem) {
+function Feature({title, to, Svg, Img, alt, description}: FeatureItem) {
   const imgUrl = Img ? useBaseUrl(Img) : undefined;
 
   return (
@@ -63,7 +67,7 @@ function Feature({title, to, Svg, Img, description}: FeatureItem) {
             {Svg ? (
               <Svg className={styles.featureSvg} role="img" />
             ) : Img ? (
-              <img className={styles.featureImg} src={imgUrl} alt="" />
+              <img className={styles.featureImg} src={imgUrl} alt={alt ?? title} />
             ) : null}
           </Link>
         </div>
