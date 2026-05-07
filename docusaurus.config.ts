@@ -76,7 +76,6 @@ const config: Config = {
         onInlineAuthors: 'warn',
         onUntruncatedBlogPosts: 'warn',
         archiveBasePath: null,
-        authorsBasePath: null,
         // editUrl:
         //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
       },
