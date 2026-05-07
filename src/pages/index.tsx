@@ -66,7 +66,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="Welcome to Technically Write Ltd."
-      description="Technical documentation services for software, SaaS, and high-trust product teams. Improve API documentation, developer documentation, user guides, and product adoption."
+      description="Technical documentation services for software, SaaS, and product teams. Improve API documentation, developer docs, user guides, and product adoption."
     >
       <Schema
         data={{
