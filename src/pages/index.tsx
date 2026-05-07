@@ -104,40 +104,12 @@ export default function Home(): ReactNode {
               '@id': 'https://www.technicallywrite.co.uk/#professionalservice',
               name: 'Technically Write Ltd.',
               url: 'https://www.technicallywrite.co.uk/',
-              provider: {
-                '@id': 'https://www.technicallywrite.co.uk/#organization',
-              },
               areaServed: [
                 'United Kingdom',
                 'Ireland',
                 'United States',
                 'European Union',
               ],
-              serviceType: [
-                'Technical documentation',
-                'Technical writing',
-                'Software documentation',
-                'SaaS documentation',
-                'API documentation',
-                'Developer documentation',
-                'Product documentation',
-                'User guides',
-                'Startup support',
-                'Aerospace documentation',
-                'Knowledge base documentation',
-                'Documentation audits',
-                'Documentation strategy',
-                'Information architecture',
-                'Release notes',
-                'Technical editing',
-              ],
-              hasOfferCatalog: {
-                '@type': 'OfferCatalog',
-                name: 'Technical documentation services',
-                description:
-                  'Technical documentation services including API documentation, developer documentation, user guides, documentation audits, documentation strategy, and release notes.',
-                url: 'https://www.technicallywrite.co.uk/technical-documentation-services/',
-              },
             },
             {
               '@type': 'WebSite',
@@ -175,12 +147,12 @@ export default function Home(): ReactNode {
               },
               potentialAction: [
                 {
-                  '@type': 'ContactAction',
+                  '@type': 'Action',
                   name: 'Book a consultation',
                   target: 'https://www.technicallywrite.co.uk/contact/',
                 },
                 {
-                  '@type': 'ContactAction',
+                  '@type': 'Action',
                   name: 'Request a free documentation audit',
                   target: 'https://www.technicallywrite.co.uk/contact/',
                 },

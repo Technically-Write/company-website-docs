@@ -1,6 +1,7 @@
 chillis:
   name: Dr Colin Hillis, FISTC
   title: Founder and Director, Technically Write Ltd.
+  description: Founder and Director of Technically Write Ltd., writing about technical documentation, documentation strategy, AI, and developer experience.
   url: https://www.technicallywrite.co.uk/about/
   image_url: /img/profile-pic.jpg
   page: true

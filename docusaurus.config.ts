@@ -82,7 +82,7 @@ const config: Config = {
         blogSidebarCount: 'ALL',
         blogTitle: 'Technical Writing Blog',
         blogDescription:
-          'Insights from Technically Write Ltd. on technical documentation, documentation strategy, AI, Docs-as-Code, and content quality.',
+          'Insights from Technically Write Ltd. on technical documentation, documentation strategy, AI, Docs-as-Code, and developer experience.',
         exclude: ['**/_*.md', '**/_*.mdx'],
           feedOptions: {
           type: ['rss', 'atom'],
