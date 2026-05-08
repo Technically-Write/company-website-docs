@@ -45,51 +45,328 @@ tags:
   - saas
   - cybersecurity
   - faq
-
-schema:
-  "@context": "https://schema.org"
-  "@type": "FAQPage"
-  "mainEntity":
-
-    - "@type": "Question"
-      "name": "What does a technical writer do?"
-      "acceptedAnswer":
-        "@type": "Answer"
-        "text": "A technical writer creates structured documentation that helps users understand, deploy, operate, and troubleshoot products or services."
-
-    - "@type": "Question"
-      "name": "Why is technical documentation important?"
-      "acceptedAnswer":
-        "@type": "Answer"
-        "text": "Good technical documentation reduces support overhead, improves product adoption, accelerates onboarding, and helps users solve problems independently."
-
-    - "@type": "Question"
-      "name": "Can AI replace technical writers?"
-      "acceptedAnswer":
-        "@type": "Answer"
-        "text": "AI can significantly assist documentation workflows, but experienced technical writers remain essential for accuracy, structure, technical validation, and user-focused communication."
-
-    - "@type": "Question"
-      "name": "Do you support API documentation?"
-      "acceptedAnswer":
-        "@type": "Answer"
-        "text": "Yes. Technically Write Ltd. provides API documentation services including endpoint documentation, authentication guidance, request and response examples, OpenAPI integration, and developer onboarding content."
-
-    - "@type": "Question"
-      "name": "Can you help migrate documentation platforms?"
-      "acceptedAnswer":
-        "@type": "Answer"
-        "text": "Yes. Documentation can be migrated between platforms such as GitBook, Docusaurus, MkDocs, Antora, MadCap Flare, Adobe FrameMaker, and Confluence."
-
-    - "@type": "Question"
-      "name": "Should documentation be version-controlled?"
-      "acceptedAnswer":
-        "@type": "Answer"
-        "text": "Yes. Version-controlled documentation improves collaboration, traceability, review workflows, and alignment between documentation and product releases."
-
 ---
 
-# Frequently Asked Questions
+import Head from '@docusaurus/Head';
+
+<Head>
+  <script type="application/ld+json">
+    {JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      '@id': 'https://www.technicallywrite.co.uk/faq/#faqpage',
+      url: 'https://www.technicallywrite.co.uk/faq/',
+      name: 'Frequently Asked Questions',
+      description:
+        'Answers to common questions about technical writing services, API documentation, SaaS documentation, documentation platforms, pricing, AI-assisted documentation, and technical documentation best practices.',
+      isPartOf: {
+        '@id': 'https://www.technicallywrite.co.uk/#website',
+      },
+      publisher: {
+        '@id': 'https://www.technicallywrite.co.uk/#organization',
+      },
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What does a technical writer do?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'A technical writer creates structured documentation that helps users understand, deploy, operate, and troubleshoot products or services. This can include user guides, API documentation, onboarding material, release notes, internal procedures, and knowledge base content.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Why is technical documentation important?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Good technical documentation reduces support overhead, improves product adoption, accelerates onboarding, and helps users solve problems independently. Poor documentation can increase customer frustration, support tickets, and implementation delays.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What types of documentation does Technically Write Ltd. create?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Technically Write Ltd. creates user guides, SaaS documentation, API documentation, release notes, deployment guides, knowledge base content, operational procedures, integration documentation, troubleshooting content, and structured technical content for complex platforms.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can you improve existing documentation instead of rewriting everything?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Existing documentation can often be audited, restructured, modernised, and improved without starting from scratch. This may include improving readability, navigation, consistency, formatting, terminology, or overall content architecture.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do startups need technical documentation?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Startups often benefit significantly from clear documentation because it reduces onboarding friction, improves product adoption, and helps smaller support teams scale more effectively.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'When should startups engage technical writing services?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Most startups engage technical writing services too late in the product lifecycle. Engaging a technical writer earlier allows documentation to scale alongside the product, establish effective standards and workflows, reduce documentation debt, improve onboarding, and create a more professional customer experience.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What industries do you support?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Technically Write Ltd. specialises in highly technical and complex products, platforms, and environments, including cybersecurity, SaaS platforms, APIs, infrastructure technologies, hosting environments, developer-focused products, aerospace, and engineering.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How do you create technical documentation?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Documentation projects typically begin with discovery sessions, product reviews, stakeholder discussions, and technical analysis. Content is then planned, structured, drafted, reviewed with SMEs, and refined before publication. Typically, 25%-30% of time is spent writing.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you work directly with developers and engineers?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Effective technical writing requires close collaboration with developers, engineers, architects, support teams, and product stakeholders to ensure technical accuracy.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can you audit our current documentation?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Documentation audits can identify structural issues, missing content, inconsistencies, outdated material, navigation problems, and areas where user experience can be improved.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How long does a technical documentation project take?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Project timelines vary depending on the complexity of the product, the amount of existing documentation, stakeholder availability, review cycles, available resources, and whether other projects are being supported at the same time.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can you help migrate documentation platforms?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Documentation can be migrated between platforms such as GitBook, Docusaurus, MkDocs, Antora, MadCap Flare, Adobe FrameMaker, Confluence, and other documentation systems while improving structure and usability.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What documentation tools do you support?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Technically Write Ltd. works with modern documentation platforms and developer documentation ecosystems, including Docusaurus, MkDocs, GitBook, Markdown-based systems, developer portals, static documentation frameworks, ReadMe, Scalar, SwaggerHub, Redocly, and OpenAPI/Swagger-based tooling.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you support API documentation?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Technically Write Ltd. provides API documentation services including endpoint documentation, authentication guidance, request and response examples, OpenAPI integration, SDK and developer onboarding content, and modern API reference presentation.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can you integrate API documentation into an existing docs portal?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. API documentation can often be integrated directly into existing documentation portals to create a more seamless user experience.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Why use static site generators (SSGs) for technical documentation?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Modern static site generators provide faster performance, improved searchability, stronger version control integration, enhanced scalability, greater flexibility, and support for documentation-as-code workflows.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you use Git and version control?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Documentation workflows integrate directly with Git-based version control systems to improve collaboration, change tracking, review processes, and release management.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can AI replace technical writers?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'AI can significantly assist documentation workflows, but experienced technical writers remain essential for accuracy, clarity, information architecture, consistency, user-focused communication, technical validation, and understanding complex subject matter.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you use AI when creating documentation?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'AI tools may be used to support efficiency, ideation, or workflow acceleration where appropriate, but all technical content still requires human review, validation, editing, and technical understanding.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Why is human-written documentation still important?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Technical documentation requires context, product understanding, audience awareness, consistency, and strategic structuring that AI alone cannot reliably provide.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Is AI-generated documentation risky?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'AI-generated documentation can introduce inaccuracies, hallucinations, inconsistent terminology, and security concerns if not properly reviewed by experienced technical professionals. When used in a balanced approach, it can be helpful and add value.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How much does technical documentation cost?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Documentation pricing depends on project complexity, scope, timelines, technical depth, stakeholder involvement, and the amount of research or restructuring required.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you offer fixed-price technical writing projects?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Depending on project scope and clarity of requirements, fixed-price engagements may be available.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you offer ongoing documentation support?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Ongoing retainers and long-term documentation support arrangements can be provided for organisations requiring continuous documentation maintenance and development.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can you work remotely?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Technically Write Ltd. primarily supports clients remotely using collaborative workflows, version control systems, meetings, and shared documentation platforms.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you work with international clients?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Remote-first documentation workflows allow collaboration with organisations across different regions and time zones.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is Technically Write Ltd.?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Technically Write Ltd. is a Northern Ireland-based technical writing consultancy specialising in structured, scalable documentation for complex technical products and platforms.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Who founded Technically Write Ltd.?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Technically Write Ltd. was founded by Dr Colin Hillis, FISTC, an experienced technical writer and documentation specialist.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What makes Technically Write Ltd. different?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Technically Write Ltd. combines technical accuracy with scalable documentation architecture, usability, user-focused structure, modern documentation tooling, and flexible technical writing support that can scale up or down depending on client needs.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Where is Technically Write Ltd. based?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Technically Write Ltd. is based in Northern Ireland and supports clients remotely.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you work with cybersecurity companies?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Cybersecurity documentation is one of the specialist areas supported by Technically Write Ltd.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can you document complex SaaS platforms?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Complex SaaS products often require structured onboarding, operational guidance, release documentation, troubleshooting content, and scalable information architecture.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you support hosting providers and infrastructure platforms?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Infrastructure, hosting, deployment, and integration-focused documentation is supported.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What makes good technical documentation?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Good documentation is accurate, structured, searchable, concise, maintainable, and written with the target audience in mind. It should also reduce dependency on support teams while improving product user adoption.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Why do many technical documentation projects fail?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Documentation projects often fail because documentation is treated as an afterthought rather than as part of the product experience. They can also fail when senior-level documentation strategy, tooling, workflows, information architecture, and governance decisions are attempted using junior-level resources without sufficient experience.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How can companies reduce support tickets through documentation?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Clear troubleshooting guidance, onboarding flows, FAQs, procedural content, and searchable knowledge bases can reduce repetitive support requests. Regular collaboration between documentation and support teams also helps identify customer pain points, prioritise useful content, and reduce support dependency.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Should documentation be version-controlled?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Version-controlled documentation improves collaboration, traceability, review workflows, change management, and alignment between documentation and product releases. However, not all products require publicly versioned documentation; many SaaS platforms maintain a single latest documentation experience while keeping documentation version-controlled internally.',
+          },
+        },
+      ],
+    })}
+  </script>
+</Head>
+
 
 ## Technical Writing Services
 
@@ -189,8 +466,6 @@ Yes, we excel in documentation tool migration. Documentation can be migrated bet
 
 ## Documentation Tools and Platforms
 
-<details>
-<summary>What documentation tools do you support?</summary>
 
 <details>
 <summary>What documentation tools do you support?</summary>
@@ -203,10 +478,6 @@ Related articles and updates can be found in our News & Posts section.
 
 </details>
 
-</details>
-
-<details>
-<summary>Do you support API documentation?</summary>
 
 <details>
 <summary>Do you support API documentation?</summary>
@@ -219,7 +490,6 @@ You can view related project work in our portfolio.
 
 </details>
 
-</details>
 
 <details>
 <summary>Can you integrate API documentation into an existing docs portal?</summary>
@@ -251,9 +521,6 @@ Yes. Documentation workflows integrate directly with Git-based version control s
 <details>
 <summary>Can AI replace technical writers?</summary>
 
-<details>
-<summary>Can AI replace technical writers?</summary>
-
 AI can significantly assist with drafting, summarisation, restructuring content, and accelerating certain documentation workflows. However, experienced technical writers remain essential for accuracy, clarity, information architecture, consistency, user-focused communication, and understanding complex technical subject matter.
 
 One of the biggest limitations of AI-generated documentation is that AI systems still require high-quality source material to produce reliable output. This becomes especially important when documenting intellectual property, proprietary platforms, new product features, internal processes, or entirely new technical concepts. Skilled subject matter experts and technical writers must still create, validate, structure, and maintain this source content.
@@ -266,7 +533,6 @@ Read more insights and commentary in our News & Posts section.
 
 </details>
 
-</details>
 
 <details>
 <summary>Do you use AI when creating documentation?</summary>

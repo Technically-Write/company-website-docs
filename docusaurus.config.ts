@@ -27,15 +27,71 @@ const config: Config = {
       'data-key': 'qLbUJR8zACEEjacElQ/oEQ',
     },
   ],
-    headTags: [
-    {
-      tagName: 'meta',
-      attributes: {
-        property: 'og:type',
-        content: 'website',
-      },
+headTags: [
+  {
+    tagName: 'meta',
+    attributes: {
+      property: 'og:type',
+      content: 'website',
     },
-  ],
+  },
+  {
+    tagName: 'script',
+    attributes: {
+      type: 'application/ld+json',
+    },
+    innerHTML: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'Organization',
+          '@id': 'https://www.technicallywrite.co.uk/#organization',
+          name: 'Technically Write Ltd.',
+          url: 'https://www.technicallywrite.co.uk/',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://www.technicallywrite.co.uk/img/tw-icon.jpg',
+          },
+          description:
+            'Technically Write Ltd. provides technical writing services, API documentation, SaaS documentation, documentation audits, and documentation platform migration support for complex technical products.',
+          foundingDate: '2024',
+          founder: {
+            '@id': 'https://www.technicallywrite.co.uk/#colin-hillis',
+          },
+          sameAs: [
+            'https://www.linkedin.com/in/colinh1',
+            'https://github.com/Technically-Write',
+          ],
+        },
+        {
+          '@type': 'Person',
+          '@id': 'https://www.technicallywrite.co.uk/#colin-hillis',
+          name: 'Dr Colin Hillis',
+          honorificSuffix: 'FISTC',
+          jobTitle: 'Founder and Director',
+          worksFor: {
+            '@id': 'https://www.technicallywrite.co.uk/#organization',
+          },
+          url: 'https://www.technicallywrite.co.uk/about/',
+          sameAs: [
+            'https://www.linkedin.com/in/colinh1',
+          ],
+        },
+        {
+          '@type': 'WebSite',
+          '@id': 'https://www.technicallywrite.co.uk/#website',
+          name: 'Technically Write Ltd.',
+          url: 'https://www.technicallywrite.co.uk/',
+          publisher: {
+            '@id': 'https://www.technicallywrite.co.uk/#organization',
+          },
+          description:
+            'Technical documentation that reduces support tickets and drives product adoption.',
+        },
+      ],
+    }),
+  },
+],
 
   
 
