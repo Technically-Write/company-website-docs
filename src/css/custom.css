@@ -510,3 +510,186 @@ div[class*="announcementBar"] button {
 [data-theme="dark"] .twContactPage .twContactItem:hover {
   color: #E3E3E3;
 }
+
+/* Reduce space after h4 headings */
+.markdown h4 {
+  margin-bottom: 0.25rem;
+}
+
+/* =========================================================
+   Expandable sections / FAQ accordions
+   Docusaurus version
+   ========================================================= */
+
+.markdown details,
+.theme-doc-markdown details {
+  margin: 0 0 1rem;
+  padding: 0;
+  background: transparent !important;
+  border: 1px solid var(--ifm-color-emphasis-300) !important;
+  border-radius: 0.5rem;
+  box-shadow: none !important;
+  overflow: hidden;
+}
+
+/* Question row */
+.markdown details > summary,
+.theme-doc-markdown details > summary {
+  position: relative;
+  padding: 0.5rem 4.25rem 0.5rem 1.25rem;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+
+/* Remove browser default marker */
+.markdown details > summary::-webkit-details-marker,
+.theme-doc-markdown details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.markdown details > summary::marker,
+.theme-doc-markdown details > summary::marker {
+  content: "";
+}
+
+/* Hover/focus state */
+.markdown details:hover,
+.markdown details:focus-within,
+.theme-doc-markdown details:hover,
+.theme-doc-markdown details:focus-within {
+  border-color: var(--ifm-color-primary) !important;
+  border-width: 1.5px !important;
+}
+
+/* Open state */
+.markdown details[open],
+.theme-doc-markdown details[open] {
+  border-color: var(--ifm-color-emphasis-300) !important;
+}
+
+/* Answer content */
+.markdown details > *:not(summary),
+.theme-doc-markdown details > *:not(summary) {
+  padding: 0 1.25rem 1rem;
+  margin: 0;
+  background: var(--ifm-background-surface-color);
+}
+
+/* Breathing room between answer paragraphs/lists */
+.markdown details > p,
+.markdown details > ul,
+.markdown details > ol,
+.theme-doc-markdown details > p,
+.theme-doc-markdown details > ul,
+.theme-doc-markdown details > ol {
+  margin-top: 0.75rem;
+}
+
+/* Remove Docusaurus/Infima default details icon */
+.markdown details > summary::before,
+.theme-doc-markdown details > summary::before {
+  content: none !important;
+  display: none !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+}
+
+/* Subtle separation between question and answer */
+.markdown details[open] > summary,
+.theme-doc-markdown details[open] > summary {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* Right-side circular plus icon */
+.markdown details > summary::after,
+.theme-doc-markdown details > summary::after {
+  content: "+" !important;
+  position: absolute;
+
+  right: 2.5rem !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+
+  width: 1.35rem !important;
+  height: 1.35rem !important;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--ifm-font-color-base) !important;
+  border-radius: 50%;
+
+  background: var(--ifm-background-surface-color) !important;
+  color: var(--ifm-font-color-base);
+
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+}
+
+/* Expanded state */
+.markdown details[open] > summary::after,
+.theme-doc-markdown details[open] > summary::after {
+  content: "−" !important;
+
+  right: 2.5rem !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+
+  width: 1.35rem !important;
+  height: 1.35rem !important;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--ifm-font-color-base) !important;
+  border-radius: 50%;
+
+  background: var(--ifm-background-surface-color) !important;
+  color: var(--ifm-color-primary);
+
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+}
+
+/* Dark mode */
+[data-theme="dark"] .markdown details,
+[data-theme="dark"] .theme-doc-markdown details {
+  border-color: var(--ifm-color-emphasis-300) !important;
+}
+
+[data-theme="dark"] .markdown details > summary,
+[data-theme="dark"] .theme-doc-markdown details > summary,
+[data-theme="dark"] .markdown details > *:not(summary),
+[data-theme="dark"] .theme-doc-markdown details > *:not(summary) {
+  background: var(--ifm-background-surface-color);
+  color: #E3E3E3;
+}
+
+[data-theme="dark"] .markdown details > summary::after,
+[data-theme="dark"] .theme-doc-markdown details > summary::after {
+  border-color: #E3E3E3 !important;
+  color: #E3E3E3;
+}
+
+[data-theme="dark"] .markdown details[open] > summary::after,
+[data-theme="dark"] .theme-doc-markdown details[open] > summary::after {
+  color: var(--ifm-color-primary);
+}
+
+.collapsibleContent_i85q {
+    border-top: 0px solid var(--docusaurus-details-decoration-color);
+}
+/* End of expandable sections */
